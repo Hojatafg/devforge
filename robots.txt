@@ -1,0 +1,36 @@
+# ==========================================
+# DevForge — Robots.txt
+# Last updated: 2026-06-11
+# ==========================================
+
+# === AI Search Retrieval (ALLOW — enables visibility in AI answers) ===
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+
+# === AI Training Scrapers (BLOCK — protect content from training) ===
+User-agent: GPTBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: FacebookBot
+Disallow: /
+
+# === Search Engines ===
+User-agent: *
+Allow: /
+Disallow: /thanks/
+Disallow: /404.html
+
+# === Crawl-delay for polite crawling ===
+Crawl-delay: 10
+
+# === Sitemaps ===
+Sitemap: https://devforgelab.netlify.app/sitemap.xml

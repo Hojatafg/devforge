@@ -1,31 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About DevForge – the team behind your next website. Our experience, values, and how we work.">
-  <title>About – DevForge</title>
+
+  <!-- ===== PRIMARY META ===== -->
+  <title>About DevForge – Your New Web Development Partner in Fredrikstad</title>
+  <meta name="description" content="Meet DevForge — a passionate web development team based in Fredrikstad, Norway. We build modern websites and apps that help businesses grow.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="author" content="DevForge">
+
+  <!-- ===== CANONICAL ===== -->
+  <link rel="canonical" href="https://devforgelab.netlify.app/about.html">
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="DevForge">
+  <meta property="og:title" content="About DevForge – Your New Web Development Partner in Fredrikstad">
+  <meta property="og:description" content="Meet DevForge — a passionate web development team based in Fredrikstad, Norway. We build modern websites and apps that help businesses grow.">
+  <meta property="og:url" content="https://devforgelab.netlify.app/about.html">
+  <meta property="og:image" content="https://devforgelab.netlify.app/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DevForge — Modern Web Development Agency">
+
+  <!-- ===== TWITTER CARDS ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About DevForge – Your New Web Development Partner">
+  <meta name="twitter:description" content="Meet DevForge — a passionate web development team based in Fredrikstad, Norway.">
+  <meta name="twitter:image" content="https://devforgelab.netlify.app/images/og-image.png">
+
+  <!-- ===== RESOURCE HINTS ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+  <!-- ===== FONTS ===== -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+
+  <!-- ===== STYLESHEET ===== -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- ===== FAVICON ===== -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚒️</text></svg>">
+
+  <!-- ===== STRUCTURED DATA ===== -->
+  <script defer src="js/structured-data.js"></script>
 </head>
 <body>
 
+  <!-- ===== SKIP TO CONTENT ===== -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- ===== NAVIGATION ===== -->
-  <nav class="nav" id="nav">
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="index.html" class="nav-logo">
+      <a href="index.html" class="nav-logo" aria-label="DevForge home">
         <span class="nav-logo-icon">&lt;/&gt;</span>
         DevForge
       </a>
       <div class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
-        <a href="about.html">About</a>
+        <a href="about.html" aria-current="page">About</a>
         <a href="contact.html" class="nav-cta">Contact</a>
       </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
         <span></span>
         <span></span>
         <span></span>
@@ -34,10 +76,10 @@
   </nav>
 
   <!-- ===== PAGE HERO ===== -->
-  <section class="page-hero">
+  <section class="page-hero" id="main-content">
     <div class="container fade-in">
       <h1>Who <span class="gradient-text">we are</span></h1>
-      <p>A passionate team of web developers who love building things that make a difference.</p>
+      <p>We're a new web development team in Fredrikstad — and we're here to prove what we can do.</p>
     </div>
   </section>
 
@@ -50,22 +92,19 @@
           <div class="about-image-border"></div>
         </div>
         <div class="about-content fade-in">
-          <h2>Meet the <span class="gradient-text">DevForge</span> team</h2>
+          <h2>Meet <span class="gradient-text">DevForge</span></h2>
           <p>
-            We're a team of experienced web developers based in Norway, with over 5 years
-            of combined experience building everything from simple landing pages to
-            advanced web applications. Our passion is creating digital experiences that
-            look great and work seamlessly.
+            We're a fresh web development agency based in Fredrikstad, Norway. Our founder has hands-on experience
+            building modern websites, e-commerce solutions, and web applications using the latest tech.
           </p>
           <p>
-            We believe in close collaboration with our clients. That's why we emphasize
-            clear communication, transparent expectations, and a process that's open
-            from start to finish.
+            As a newer team, we put everything into every project. Clear communication, honest pricing,
+            and a genuine commitment to delivering work we're proud of — that's what you can expect.
           </p>
           <p>
-            When we're not coding, you'll find us exploring new technologies, hiking in
-            the mountains, or geeking out over the latest frameworks. We're never done
-            learning — and our clients benefit from that.
+            When we're not coding, you'll find us exploring new technologies, learning the latest frameworks,
+            and figuring out how to build better, faster, and smarter. Every project is a chance to grow —
+            and our clients are the ones who benefit.
           </p>
           <div class="about-skills">
             <span class="about-skill">HTML/CSS</span>
@@ -114,35 +153,35 @@
     </div>
   </section>
 
-  <!-- ===== EXPERIENCE TIMELINE ===== -->
+  <!-- ===== JOURNEY ===== -->
   <section class="section">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-tag">Experience</span>
-        <h2 class="section-title">Our journey</h2>
-        <p class="section-subtitle">From our first line of code to today.</p>
+        <span class="section-tag">Our journey</span>
+        <h2 class="section-title">Where we're <span class="gradient-text">headed</span></h2>
+        <p class="section-subtitle">From idea to launch — this is just the beginning.</p>
       </div>
       <div style="max-width:700px;margin:0 auto;">
         <div class="service-card fade-in" style="margin-bottom:16px;">
           <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
-            <h3 style="font-size:1.1rem;">DevForge Founded</h3>
-            <span style="font-size:0.85rem;color:var(--primary-light);font-weight:600;">2022 – Present</span>
+            <h3 style="font-size:1.1rem;">The Idea</h3>
+            <span style="font-size:0.85rem;color:var(--primary-light);font-weight:600;">2025</span>
           </div>
-          <p style="color:var(--text-muted);font-size:0.95rem;">Worked on 50+ projects ranging from websites and e-commerce stores to full web applications for clients across Norway and beyond.</p>
+          <p style="color:var(--text-muted);font-size:0.95rem;">The idea for DevForge was born — a vision to offer modern, high-quality web development with transparency and fair pricing. Countless hours spent learning, building, and preparing.</p>
         </div>
         <div class="service-card fade-in" style="margin-bottom:16px;">
           <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
-            <h3 style="font-size:1.1rem;">Team Expansion</h3>
-            <span style="font-size:0.85rem;color:var(--primary-light);font-weight:600;">2023</span>
+            <h3 style="font-size:1.1rem;">DevForge Launches</h3>
+            <span style="font-size:0.85rem;color:var(--primary-light);font-weight:600;">2026</span>
           </div>
-          <p style="color:var(--text-muted);font-size:0.95rem;">Grew from a solo operation to a small team, allowing us to take on larger and more complex projects while maintaining quality.</p>
+          <p style="color:var(--text-muted);font-size:0.95rem;">DevForge officially opens. A new team with modern skills, a passion for quality, and a commitment to making every client project a success. <strong>Your project could be our next milestone.</strong></p>
         </div>
         <div class="service-card fade-in" style="margin-bottom:16px;">
           <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
-            <h3 style="font-size:1.1rem;">50+ Projects Delivered</h3>
-            <span style="font-size:0.85rem;color:var(--primary-light);font-weight:600;">2024 – 2026</span>
+            <h3 style="font-size:1.1rem;">Your Project Starts Here</h3>
+            <span style="font-size:0.85rem;color:var(--primary-light);font-weight:600;">Today</span>
           </div>
-          <p style="color:var(--text-muted);font-size:0.95rem;">Reached the milestone of 50 completed projects, with a focus on modern tech stacks, accessibility, and performance optimization.</p>
+          <p style="color:var(--text-muted);font-size:0.95rem;">Every project is a chance to prove ourselves. That means you get our full attention, honest advice, and a website that goes above and beyond your expectations.</p>
         </div>
       </div>
     </div>
@@ -158,7 +197,7 @@
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
@@ -187,25 +226,24 @@
           </div>
         </div>
         <div>
-          <h4>Contact</h4>
+          <h4>Connect</h4>
           <div class="footer-links">
-            <a href="contact.html">Contact form</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
+            <a href="contact.html">Send a message</a>
+            <a href="https://github.com/Hojatafg" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 DevForge. All rights reserved.</p>
+        <p>&copy; 2026 DevForge. All rights reserved. Based in Fredrikstad, Norway.</p>
         <div class="footer-social">
-          <a href="#" aria-label="GitHub">🐙</a>
-          <a href="#" aria-label="LinkedIn">💼</a>
-          <a href="#" aria-label="Twitter/X">𝕏</a>
+          <a href="https://github.com/Hojatafg" target="_blank" rel="noopener noreferrer" aria-label="DevForge on GitHub">🐙</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="DevForge on LinkedIn">💼</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>

@@ -1,31 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DevForge – modern web development agency. We build websites, web apps, and e-commerce solutions that deliver results.">
-  <title>DevForge – Modern Web Development</title>
+
+  <!-- ===== PRIMARY META ===== -->
+  <title>DevForge – Modern Website Development for Your Business</title>
+  <meta name="description" content="We build modern websites, e-commerce stores, and web applications that help your business grow. Client-focused, quality-driven.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="author" content="DevForge">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- ===== CANONICAL ===== -->
+  <link rel="canonical" href="https://devforgelab.netlify.app/">
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="DevForge">
+  <meta property="og:title" content="DevForge – Modern Website Development for Your Business">
+  <meta property="og:description" content="We build modern websites, e-commerce stores, and web applications that help your business grow. Based in Fredrikstad, Norway.">
+  <meta property="og:url" content="https://devforgelab.netlify.app/">
+  <meta property="og:image" content="https://devforgelab.netlify.app/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DevForge — Modern Web Development Agency">
+
+  <!-- ===== TWITTER CARDS ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DevForge – Modern Website Development for Your Business">
+  <meta name="twitter:description" content="We build modern websites, e-commerce stores, and web applications that help your business grow.">
+  <meta name="twitter:image" content="https://devforgelab.netlify.app/images/og-image.png">
+
+  <!-- ===== RESOURCE HINTS ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+
+  <!-- ===== FONTS ===== -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+
+  <!-- ===== STYLESHEET ===== -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- ===== FAVICON (inline emoji fallback) ===== -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚒️</text></svg>">
+
+  <!-- ===== STRUCTURED DATA (deferred, non-blocking) ===== -->
+  <script defer src="js/structured-data.js"></script>
 </head>
 <body>
 
+  <!-- ===== SKIP TO CONTENT (Accessibility) ===== -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- ===== NAVIGATION ===== -->
-  <nav class="nav" id="nav">
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="index.html" class="nav-logo">
+      <a href="index.html" class="nav-logo" aria-label="DevForge home">
         <span class="nav-logo-icon">&lt;/&gt;</span>
         DevForge
       </a>
       <div class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
+        <a href="index.html" aria-current="page">Home</a>
         <a href="services.html">Services</a>
         <a href="about.html">About</a>
         <a href="contact.html" class="nav-cta">Contact</a>
       </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
         <span></span>
         <span></span>
         <span></span>
@@ -34,7 +78,7 @@
   </nav>
 
   <!-- ===== HERO ===== -->
-  <section class="hero">
+  <section class="hero" id="main-content">
     <div class="container">
       <div class="hero-content fade-in">
         <div class="hero-badge">
@@ -56,16 +100,16 @@
         </div>
         <div class="hero-stats">
           <div>
-            <div class="stat-number" data-target="50" data-suffix="+">0+</div>
-            <div class="stat-label">Completed Projects</div>
+            <div class="stat-number" data-target="1" data-suffix="">0</div>
+            <div class="stat-label">Your next project</div>
           </div>
           <div>
-            <div class="stat-number" data-target="30" data-suffix="+">0+</div>
-            <div class="stat-label">Happy Clients</div>
+            <div class="stat-number" data-target="100" data-suffix="%">0%</div>
+            <div class="stat-label">Dedicated to your success</div>
           </div>
           <div>
-            <div class="stat-number" data-target="5" data-suffix="+">0+</div>
-            <div class="stat-label">Years of Experience</div>
+            <div class="stat-number" data-target="1" data-suffix="">0</div>
+            <div class="stat-label">Team ready to help you</div>
           </div>
         </div>
       </div>
@@ -148,47 +192,34 @@
     </div>
   </section>
 
-  <!-- ===== TESTIMONIALS ===== -->
+  <!-- ===== BUILD PROCESS ===== -->
   <section class="section section-dark">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-tag">Testimonials</span>
-        <h2 class="section-title">What our clients say</h2>
-        <p class="section-subtitle">We're proud to have helped many businesses with their digital presence.</p>
+        <span class="section-tag">How We Build</span>
+        <h2 class="section-title">From idea to <span class="gradient-text">launch</span></h2>
+        <p class="section-subtitle">A transparent, structured process that keeps you in control.</p>
       </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card fade-in">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Incredibly professional and skilled. Our website turned out exactly how we imagined — and even better. Highly recommended!"</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">MH</div>
-            <div>
-              <div class="testimonial-name">Marte Hansen</div>
-              <div class="testimonial-role">Founder, Nordic Living</div>
-            </div>
-          </div>
+      <div class="process-grid">
+        <div class="process-step fade-in">
+          <div class="process-number">1</div>
+          <h3>Discovery</h3>
+          <p>We learn about your business, goals, and audience. You get a clear plan and fixed price.</p>
         </div>
-        <div class="testimonial-card fade-in">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Fast, thorough, and really good at understanding what we needed. Delivered beyond expectations. If we have a new project, we know who to call!"</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">ØJ</div>
-            <div>
-              <div class="testimonial-name">Øystein Jensen</div>
-              <div class="testimonial-role">CEO, Fjord Consulting</div>
-            </div>
-          </div>
+        <div class="process-step fade-in">
+          <div class="process-number">2</div>
+          <h3>Design</h3>
+          <p>We create a visual prototype. You review and give feedback before any code is written.</p>
         </div>
-        <div class="testimonial-card fade-in">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"The best web developer team I've worked with. Communication was seamless and the final result was perfect. An absolute pleasure to work with!"</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">SL</div>
-            <div>
-              <div class="testimonial-name">Silje Larsen</div>
-              <div class="testimonial-role">Marketing Director, TechNor</div>
-            </div>
-          </div>
+        <div class="process-step fade-in">
+          <div class="process-number">3</div>
+          <h3>Build</h3>
+          <p>We develop your site with regular check-ins. You see progress every step of the way.</p>
+        </div>
+        <div class="process-step fade-in">
+          <div class="process-number">4</div>
+          <h3>Launch & Grow</h3>
+          <p>We deploy, test, and hand off. Ongoing support available as your business grows.</p>
         </div>
       </div>
     </div>
@@ -204,7 +235,7 @@
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
@@ -217,10 +248,10 @@
         <div>
           <h4>Services</h4>
           <div class="footer-links">
-            <a href="services.html">Websites</a>
-            <a href="services.html">E-Commerce</a>
-            <a href="services.html">Web Applications</a>
-            <a href="services.html">SEO & Performance</a>
+            <a href="services.html" aria-label="View our website development services">Websites</a>
+            <a href="services.html" aria-label="View our e-commerce services">E-Commerce</a>
+            <a href="services.html" aria-label="View our web application services">Web Applications</a>
+            <a href="services.html" aria-label="View our SEO and performance services">SEO & Performance</a>
           </div>
         </div>
         <div>
@@ -233,25 +264,24 @@
           </div>
         </div>
         <div>
-          <h4>Contact</h4>
+          <h4>Connect</h4>
           <div class="footer-links">
-            <a href="contact.html">Contact form</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
+            <a href="contact.html">Send a message</a>
+            <a href="https://github.com/Hojatafg" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 DevForge. All rights reserved.</p>
+        <p>&copy; 2026 DevForge. All rights reserved. Based in Fredrikstad, Norway.</p>
         <div class="footer-social">
-          <a href="#" aria-label="GitHub">🐙</a>
-          <a href="#" aria-label="LinkedIn">💼</a>
-          <a href="#" aria-label="Twitter/X">𝕏</a>
+          <a href="https://github.com/Hojatafg" target="_blank" rel="noopener noreferrer" aria-label="DevForge on GitHub">🐙</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="DevForge on LinkedIn">💼</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>

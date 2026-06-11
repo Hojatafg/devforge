@@ -1,31 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Our web development services – websites, e-commerce, web applications, SEO, and more.">
-  <title>Services – DevForge</title>
+
+  <!-- ===== PRIMARY META ===== -->
+  <title>Web Development Services – Websites, E-Commerce, SEO | DevForge</title>
+  <meta name="description" content="Professional web development services from DevForge: websites from $1,500, e-commerce from $3,000, web apps from $5,000. SEO, maintenance, and accessible design.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="author" content="DevForge">
+
+  <!-- ===== CANONICAL ===== -->
+  <link rel="canonical" href="https://devforgelab.netlify.app/services.html">
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="DevForge">
+  <meta property="og:title" content="Web Development Services – Websites, E-Commerce, SEO | DevForge">
+  <meta property="og:description" content="Professional web development services: websites from $1,500, e-commerce from $3,000, web apps from $5,000.">
+  <meta property="og:url" content="https://devforgelab.netlify.app/services.html">
+  <meta property="og:image" content="https://devforgelab.netlify.app/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DevForge Web Development Services">
+
+  <!-- ===== TWITTER CARDS ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Web Development Services – Websites, E-Commerce, SEO | DevForge">
+  <meta name="twitter:description" content="Professional web development services: websites, e-commerce, SEO, and more.">
+  <meta name="twitter:image" content="https://devforgelab.netlify.app/images/og-image.png">
+
+  <!-- ===== RESOURCE HINTS ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+  <!-- ===== FONTS ===== -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+
+  <!-- ===== STYLESHEET ===== -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- ===== FAVICON ===== -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚒️</text></svg>">
+
+  <!-- ===== STRUCTURED DATA ===== -->
+  <script defer src="js/structured-data.js"></script>
 </head>
 <body>
 
+  <!-- ===== SKIP TO CONTENT ===== -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- ===== NAVIGATION ===== -->
-  <nav class="nav" id="nav">
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="index.html" class="nav-logo">
+      <a href="index.html" class="nav-logo" aria-label="DevForge home">
         <span class="nav-logo-icon">&lt;/&gt;</span>
         DevForge
       </a>
       <div class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
+        <a href="services.html" aria-current="page">Services</a>
         <a href="about.html">About</a>
         <a href="contact.html" class="nav-cta">Contact</a>
       </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
         <span></span>
         <span></span>
         <span></span>
@@ -34,7 +76,7 @@
   </nav>
 
   <!-- ===== PAGE HERO ===== -->
-  <section class="page-hero">
+  <section class="page-hero" id="main-content">
     <div class="container fade-in">
       <h1>Our <span class="gradient-text">services</span></h1>
       <p>Tailored web solutions for your business — no matter the size or industry.</p>
@@ -43,14 +85,16 @@
 
   <!-- ===== DETAILED SERVICES ===== -->
   <section class="section section-dark">
-    <div class="container">
+    <div class="container" itemscope itemtype="https://schema.org/ItemList">
       <div class="section-header fade-in">
         <span class="section-tag">What we offer</span>
         <h2 class="section-title">Everything you need to succeed online</h2>
         <p class="section-subtitle">We cover the full spectrum from design to finished product and ongoing maintenance.</p>
       </div>
       <div class="services-detailed-grid">
-        <div class="service-detailed-card fade-in">
+        <div class="service-detailed-card fade-in" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+          <meta itemprop="name" content="Websites & Landing Pages">
+          <meta itemprop="description" content="Modern, responsive, and fast websites built with the latest technologies.">
           <div class="service-detailed-icon">🖥️</div>
           <h3>Websites & Landing Pages</h3>
           <p>Modern, responsive, and fast websites built with the latest technologies.</p>
@@ -65,7 +109,9 @@
             <div class="price-note">Fixed price based on scope</div>
           </div>
         </div>
-        <div class="service-detailed-card fade-in">
+        <div class="service-detailed-card fade-in" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+          <meta itemprop="name" content="E-Commerce">
+          <meta itemprop="description" content="Full-featured e-commerce solutions for your business.">
           <div class="service-detailed-icon">🛒</div>
           <h3>E-Commerce</h3>
           <p>Full-featured e-commerce solutions for your business.</p>
@@ -80,7 +126,9 @@
             <div class="price-note">Fixed price based on scope</div>
           </div>
         </div>
-        <div class="service-detailed-card fade-in">
+        <div class="service-detailed-card fade-in" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+          <meta itemprop="name" content="Web Applications">
+          <meta itemprop="description" content="Advanced solutions with real-time data and user management.">
           <div class="service-detailed-icon">⚡</div>
           <h3>Web Applications</h3>
           <p>Advanced solutions with real-time data and user management.</p>
@@ -95,7 +143,9 @@
             <div class="price-note">Fixed price or hourly rate</div>
           </div>
         </div>
-        <div class="service-detailed-card fade-in">
+        <div class="service-detailed-card fade-in" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+          <meta itemprop="name" content="SEO & Performance">
+          <meta itemprop="description" content="Get your website to the top of search results and give users a lightning-fast experience.">
           <div class="service-detailed-icon">🔍</div>
           <h3>SEO & Performance</h3>
           <p>Get your website to the top of search results and give users a lightning-fast experience.</p>
@@ -110,7 +160,9 @@
             <div class="price-note">Per project or hourly</div>
           </div>
         </div>
-        <div class="service-detailed-card fade-in">
+        <div class="service-detailed-card fade-in" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+          <meta itemprop="name" content="Responsive & Accessible Design">
+          <meta itemprop="description" content="Websites that work for everyone — regardless of device or ability.">
           <div class="service-detailed-icon">♿</div>
           <h3>Responsive & Accessible Design</h3>
           <p>Websites that work for everyone — regardless of device or ability.</p>
@@ -125,7 +177,9 @@
             <div class="price-note">Add-on service</div>
           </div>
         </div>
-        <div class="service-detailed-card fade-in">
+        <div class="service-detailed-card fade-in" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+          <meta itemprop="name" content="Maintenance & Support">
+          <meta itemprop="description" content="Keep your website secure, updated, and in top shape all year round.">
           <div class="service-detailed-icon">🔄</div>
           <h3>Maintenance & Support</h3>
           <p>Keep your website secure, updated, and in top shape all year round.</p>
@@ -247,35 +301,35 @@
         <h2 class="section-title">Frequently asked questions</h2>
         <p class="section-subtitle">Answers to common questions about web development and working with us.</p>
       </div>
-      <div class="faq-list fade-in">
-        <div class="faq-item">
-          <button class="faq-question">How long does it take to build a website?</button>
-          <div class="faq-answer">
-            <p>It depends on complexity. A simple landing page can be ready in 1-2 weeks, while an e-commerce site or web app typically takes 3-6 weeks. We'll give you a clear timeline before starting.</p>
+      <div class="faq-list fade-in" itemscope itemtype="https://schema.org/FAQPage">
+        <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <button class="faq-question" itemprop="name">How long does it take to build a website?</button>
+          <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">It depends on complexity. A simple landing page can be ready in 1-2 weeks, while an e-commerce site or web app typically takes 3-6 weeks. We'll give you a clear timeline before starting.</p>
           </div>
         </div>
-        <div class="faq-item">
-          <button class="faq-question">How much does a website cost?</button>
-          <div class="faq-answer">
-            <p>The price depends on size and functionality. A simple site starts at $1,500, e-commerce from $3,000, and advanced web apps from $5,000. We always provide a fixed price upfront — no hidden costs.</p>
+        <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <button class="faq-question" itemprop="name">How much does a website cost?</button>
+          <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">The price depends on size and functionality. A simple site starts at $1,500, e-commerce from $3,000, and advanced web apps from $5,000. We always provide a fixed price upfront — no hidden costs.</p>
           </div>
         </div>
-        <div class="faq-item">
-          <button class="faq-question">Can I update the website myself?</button>
-          <div class="faq-answer">
-            <p>Yes! We include a user-friendly CMS so you can easily update text, images, and content without technical knowledge. If you'd rather let us handle updates, we have maintenance plans available.</p>
+        <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <button class="faq-question" itemprop="name">Can I update the website myself?</button>
+          <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">Yes! We include a user-friendly CMS so you can easily update text, images, and content without technical knowledge. If you'd rather let us handle updates, we have maintenance plans available.</p>
           </div>
         </div>
-        <div class="faq-item">
-          <button class="faq-question">Will my website work on mobile?</button>
-          <div class="faq-answer">
-            <p>Absolutely! Every website we build is responsive — it adapts perfectly to mobile, tablet, and desktop. Over 60% of web traffic comes from mobile, so this is a standard feature in all our projects.</p>
+        <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <button class="faq-question" itemprop="name">Will my website work on mobile?</button>
+          <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">Absolutely! Every website we build is responsive — it adapts perfectly to mobile, tablet, and desktop. Over 60% of web traffic comes from mobile, so this is a standard feature in all our projects.</p>
           </div>
         </div>
-        <div class="faq-item">
-          <button class="faq-question">Do you include hosting and domain?</button>
-          <div class="faq-answer">
-            <p>We help you set up hosting and a domain, and include free hosting for 3-6 months in most packages. After that, you pay a reasonable monthly rate directly to the hosting provider.</p>
+        <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <button class="faq-question" itemprop="name">Do you include hosting and domain?</button>
+          <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">We help you set up hosting and a domain, and include free hosting for 3-6 months in most packages. After that, you pay a reasonable monthly rate directly to the hosting provider.</p>
           </div>
         </div>
       </div>
@@ -292,7 +346,7 @@
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
@@ -321,25 +375,24 @@
           </div>
         </div>
         <div>
-          <h4>Contact</h4>
+          <h4>Connect</h4>
           <div class="footer-links">
-            <a href="contact.html">Contact form</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
+            <a href="contact.html">Send a message</a>
+            <a href="https://github.com/Hojatafg" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 DevForge. All rights reserved.</p>
+        <p>&copy; 2026 DevForge. All rights reserved. Based in Norway.</p>
         <div class="footer-social">
-          <a href="#" aria-label="GitHub">🐙</a>
-          <a href="#" aria-label="LinkedIn">💼</a>
-          <a href="#" aria-label="Twitter/X">𝕏</a>
+          <a href="https://github.com/Hojatafg" target="_blank" rel="noopener noreferrer" aria-label="DevForge on GitHub">🐙</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="DevForge on LinkedIn">💼</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>
