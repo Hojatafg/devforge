@@ -225,6 +225,18 @@ ul {
   gap: 10px;
 }
 
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+.footer-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
 .nav-logo-icon {
   width: 36px;
   height: 36px;
