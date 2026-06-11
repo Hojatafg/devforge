@@ -36,10 +36,7 @@
       "addressRegion": "Østfold",
       "addressCountry": "NO"
     },
-    "sameAs": [
-      "https://github.com/Hojatafg",
-      "https://www.linkedin.com/in/hojatafg/"
-    ],
+    "sameAs": [],
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "sales",
