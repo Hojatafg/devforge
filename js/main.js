@@ -73,24 +73,31 @@ document.querySelectorAll('.faq-question').forEach(button => {
   });
 });
 
-/* ===== CONTACT FORM ===== */
+/* ===== CONTACT FORM (Netlify Forms) ===== */
 const contactForm = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 
 if (contactForm) {
   contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-
     const submitBtn = contactForm.querySelector('.btn');
     const originalText = submitBtn.innerHTML;
-    submitBtn.innerHTML = '⏳ Sender...';
+    submitBtn.innerHTML = '⏳ Sending...';
     submitBtn.disabled = true;
 
-    // Simulate sending (replace with actual form handling)
-    await new Promise(resolve => setTimeout(resolve, 1500));
-
-    contactForm.style.display = 'none';
-    formSuccess.classList.add('show');
+    try {
+      const formData = new FormData(contactForm);
+      const encoded = new URLSearchParams(formData).toString();
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encoded
+      });
+      contactForm.style.display = 'none';
+      formSuccess.classList.add('show');
+    } catch (err) {
+      alert('Something went wrong. Please try again or email us directly.');
+    }
 
     submitBtn.innerHTML = originalText;
     submitBtn.disabled = false;
