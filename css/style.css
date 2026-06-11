@@ -1084,7 +1084,217 @@ ul {
   color: var(--text-muted);
 }
 
-/* ===== PAGE HERO ===== */
+/* ===== CASE STUDIES ===== */
+.case-study {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+.case-study:hover {
+  border-color: var(--primary);
+}
+.case-study-header {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-color);
+}
+.case-study-label {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--primary-light);
+  margin-bottom: 8px;
+}
+.case-study-header h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.case-study-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.case-study-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.case-study-section {
+  margin-bottom: 20px;
+}
+.case-study-section h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-light);
+  margin-bottom: 8px;
+}
+.case-study-section p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+.case-study-preview {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .case-study-grid {
+    grid-template-columns: 1fr;
+  }
+  .case-study {
+    padding: 24px;
+  }
+  .case-study-header h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* ===== BLOG ===== */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+}
+.blog-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.blog-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+.blog-card-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.blog-card-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 12px;
+  border-radius: 50px;
+  background: rgba(99, 102, 241, 0.15);
+  color: var(--primary-light);
+}
+.blog-card-date {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+.blog-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+.blog-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 20px;
+}
+.blog-card-link {
+  color: var(--primary-light);
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s ease;
+}
+.blog-card-link:hover {
+  gap: 10px;
+}
+.blog-card-readtime {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+/* ===== BLOG ARTICLE ===== */
+.blog-article {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.blog-article-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.blog-article-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.blog-article-header .blog-card-date {
+  font-size: 0.95rem;
+}
+.blog-article-body {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text-light);
+}
+.blog-article-body h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.blog-article-body h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  color: var(--primary-light);
+}
+.blog-article-body p {
+  margin-bottom: 20px;
+  color: var(--text-muted);
+}
+.blog-article-body ul, .blog-article-body ol {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  padding-left: 24px;
+}
+.blog-article-body li {
+  margin-bottom: 8px;
+}
+.blog-article-body strong {
+  color: var(--text-light);
+}
+.blog-article-body .highlight-box {
+  background: var(--bg-section);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius-sm);
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+.blog-article-body .highlight-box p {
+  margin-bottom: 0;
+}
 .page-hero {
   padding: 160px 0 80px;
   text-align: center;

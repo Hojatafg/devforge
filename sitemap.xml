@@ -14,6 +14,36 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://devforgelab.netlify.app/portfolio.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devforgelab.netlify.app/blog.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devforgelab.netlify.app/blog/website-cost-norway-2026.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://devforgelab.netlify.app/blog/signs-need-new-website.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://devforgelab.netlify.app/blog/website-vs-social-media.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://devforgelab.netlify.app/about.html</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
