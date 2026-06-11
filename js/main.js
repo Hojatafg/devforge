@@ -87,16 +87,21 @@ if (contactForm) {
 
     try {
       const formData = new FormData(contactForm);
-      const encoded = new URLSearchParams(formData).toString();
-      await fetch('/', {
+      const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encoded
+        body: new URLSearchParams(formData).toString()
       });
-      contactForm.style.display = 'none';
-      formSuccess.classList.add('show');
+      if (response.ok) {
+        contactForm.style.display = 'none';
+        formSuccess.classList.add('show');
+      } else {
+        // Fallback: try plain HTML form submission
+        contactForm.submit();
+      }
     } catch (err) {
-      alert('Something went wrong. Please try again or email us directly.');
+      // Fallback: let the browser submit normally
+      contactForm.submit();
     }
 
     submitBtn.innerHTML = originalText;
