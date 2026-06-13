@@ -50,8 +50,13 @@
   <link rel="icon" type="image/png" sizes="192x192" href="images/devforge-icon-192.png">
   <link rel="apple-touch-icon" href="images/devforge-icon-192.png">
 
-  <!-- ===== STRUCTURED DATA (deferred, non-blocking) ===== -->
+  <!-- ===== STRUCTURED DATA ===== -->
   <script defer src="js/structured-data.js"></script>
+
+  <!-- ===== HREFLANG ===== -->
+  <link rel="alternate" hreflang="en" href="https://devforgelab.netlify.app/index.html">
+  <link rel="alternate" hreflang="no" href="https://devforgelab.netlify.app/index-no.html">
+  <link rel="alternate" hreflang="x-default" href="https://devforgelab.netlify.app/index.html">
 </head>
 <body>
 
@@ -71,6 +76,7 @@
         <a href="blog.html">Blog</a>
         <a href="about.html">About</a>
         <a href="contact.html" class="nav-cta">Contact</a>
+        <a href="index-no.html" class="nav-lang" aria-label="Norsk">NO</a>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
         <span></span>
@@ -111,11 +117,12 @@
             <div class="stat-label">Dedicated to your success</div>
           </div>
           <div>
-            <div class="stat-number" data-target="1" data-suffix="">0</div>
-            <div class="stat-label">Team ready to help you</div>
+            <h4>Connect</h4>
+            <div class="footer-links">
+              <a href="contact.html">Send a message</a>
+              <a href="https://t.me/hajo101378" target="_blank" rel="noopener noreferrer" aria-label="Contact on Telegram">📱 Telegram</a>
+            </div>
           </div>
-        </div>
-      </div>
     </div>
   </section>
 
