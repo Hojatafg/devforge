@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- D letterform - left stem -->
+  <path d="M20,20 L20,100 Q20,110 30,110 L70,110 Q100,110 100,75 Q100,55 85,42 Q75,32 60,28 Q50,25 40,25 L30,25 Q20,25 20,35 Z"
+        fill="url(#grad1)" opacity="0.95"/>
+  <!-- D inner negative space creates part of the forge shape -->
+  <path d="M35,35 L35,85 Q35,90 40,90 L60,90 Q80,90 80,65 Q80,45 60,38 Q50,35 40,35 Z"
+        fill="#0f172a"/>
+
+  <!-- F letterform - flowing into the forge flame -->
+  <path d="M85,110 L85,75 Q90,78 100,78 L100,90 L110,90 L110,78 Q115,80 120,78 L120,85 L130,85 L130,70 L100,70 L100,60 L115,60 L115,45 L100,45 L100,35 L85,35 Z"
+        fill="url(#grad2)" opacity="0.85"/>
+
+  <!-- Flame/anvil silhouette emerging from the D+F intersection -->
+  <path d="M55,95 Q60,75 65,65 Q70,55 75,50 Q80,55 85,65 Q90,75 95,95 Z"
+        fill="url(#flame)" opacity="0.4" filter="url(#glow)"/>
+  <path d="M62,90 Q65,78 70,70 Q75,62 80,70 Q85,78 88,90 Z"
+        fill="url(#flame)" opacity="0.3"/>
+
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Text -->
+  <text x="155" y="52" font-family="Inter, -apple-system, sans-serif" font-size="36" font-weight="800" fill="#f1f5f9" letter-spacing="-0.5">Dev</text>
+  <text x="155" y="90" font-family="Inter, -apple-system, sans-serif" font-size="36" font-weight="800" fill="url(#grad1)" letter-spacing="-0.5">Forge</text>
+</svg>

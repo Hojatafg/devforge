@@ -1,14 +1,13 @@
+functionsDirectory = "C:\\Users\\affai\\webdev-site\\netlify\\functions"
+functionsDirectoryOrigin = "config-v1"
 headersOrigin = "config"
 redirectsOrigin = "config"
 plugins = []
 
-[functions]
-
-[functions."*"]
-
 [build]
 publish = "C:\\Users\\affai\\webdev-site"
 publishOrigin = "default"
+functions = "C:\\Users\\affai\\webdev-site\\netlify\\functions"
 
 [build.environment]
 
@@ -23,6 +22,10 @@ publishOrigin = "default"
 [build.processing.js]
 
 [build.services]
+
+[functions]
+
+[functions."*"]
 
 [[headers]]
 for = "/*"

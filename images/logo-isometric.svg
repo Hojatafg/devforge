@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="ember" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Isometric base block (front face) -->
+  <polygon points="55,65 85,50 85,28 55,43" fill="url(#grad2)" opacity="0.9"/>
+  <!-- Isometric block (right face) -->
+  <polygon points="85,50 115,65 115,43 85,28" fill="url(#grad1)" opacity="0.8"/>
+  <!-- Isometric block (top face) -->
+  <polygon points="55,43 85,28 115,43 85,58" fill="url(#grad1)" opacity="0.6"/>
+
+  <!-- Second block - shifted -->
+  <polygon points="75,75 105,60 105,38 75,53" fill="url(#grad2)" opacity="0.7"/>
+  <polygon points="105,60 135,75 135,53 105,38" fill="#4f46e5" opacity="0.6"/>
+  <polygon points="75,53 105,38 135,53 105,68" fill="#6366f1" opacity="0.4"/>
+
+  <!-- Third block - shifted further -->
+  <polygon points="45,80 75,65 75,43 45,58" fill="#4f46e5" opacity="0.5"/>
+  <polygon points="75,65 105,80 105,58 75,43" fill="url(#grad2)" opacity="0.6"/>
+
+  <!-- Ember particles -->
+  <circle cx="50" cy="38" r="2" fill="url(#ember)" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="90" cy="30" r="1.5" fill="#06b6d4" filter="url(#glow)" opacity="0.7"/>
+  <circle cx="70" cy="85" r="1" fill="#f59e0b" filter="url(#glow)" opacity="0.6"/>
+  <circle cx="110" cy="70" r="1.5" fill="#06b6d4" filter="url(#glow)" opacity="0.5"/>
+  <circle cx="40" cy="60" r="1" fill="#818cf8" filter="url(#glow)" opacity="0.8"/>
+  <circle cx="120" cy="40" r="2" fill="url(#ember)" filter="url(#glow)" opacity="0.4"/>
+
+  <!-- Text -->
+  <text x="155" y="52" font-family="Inter, -apple-system, sans-serif" font-size="36" font-weight="800" fill="#f1f5f9" letter-spacing="-0.5">Dev</text>
+  <text x="155" y="90" font-family="Inter, -apple-system, sans-serif" font-size="36" font-weight="800" fill="url(#grad1)" letter-spacing="-0.5">Forge</text>
+</svg>

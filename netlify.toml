@@ -53,3 +53,11 @@
   from = "/home"
   to = "/"
   status = 301
+
+# Functions directory
+[build]
+  functions = "netlify/functions"
+
+# Pet Portraits: Environment variables (set FAL_KEY in Netlify dashboard)
+# [context.production.environment]
+#   FAL_KEY = "your-key-here"
