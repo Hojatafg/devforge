@@ -481,6 +481,54 @@ ul {
   flex-wrap: wrap;
 }
 
+.hero-logo-area {
+  margin: 12px 0;
+  max-width: 100%;
+}
+
+.hero-logo-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-tagline {
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.hero-proof {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.proof-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .hero-logo-img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .hero-tagline {
+    font-size: 1rem;
+  }
+  .hero-proof {
+    gap: 16px;
+  }
+}
+
 .hero-stats {
   display: flex;
   gap: 48px;
