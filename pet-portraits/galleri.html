@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Se vårt galleri med AI-genererte renessanseportretter av kjæledyr. Bli inspirert og bestill ditt eget portrett.">
+  <title>Galleri – DevForge Pet Portraits</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>👑</text></svg>">
+</head>
+<body>
+
+<nav class="nav scrolled">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">DF</div>
+      <span>DevForge Pet Portraits</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#styles">Stiler</a></li>
+      <li><a href="index.html#gallery" class="active">Galleri</a></li>
+      <li><a href="index.html#pricing">Priser</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="bestill.html" class="nav-cta">Bestill nå →</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Meny">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="section" style="padding-top: calc(var(--nav-height) + 40px);">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <div class="section-tag">🖼️ Galleri</div>
+      <h1 class="section-title">Våre <span class="highlight">portretter</span></h1>
+      <p class="section-subtitle">Hvert portrett er unikt. Se hva vi har laget og bli inspirert til ditt eget.</p>
+    </div>
+
+    <div class="gallery-filters fade-up">
+      <button class="filter-btn active" data-filter="all">Alle</button>
+      <button class="filter-btn" data-filter="renaissance">Renaissance Royal</button>
+      <button class="filter-btn" data-filter="knight">Ridder & Uniform</button>
+      <button class="filter-btn" data-filter="victorian">Victorian Akvarell</button>
+      <button class="filter-btn" data-filter="premium">Pet + Eier</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item fade-up" data-category="renaissance">
+        <img src="images/portraits/01_renaissance_royal_dog.jpg" alt="Golden Retriever Royal" loading="lazy">
+        <div class="gallery-overlay"><span>🌟 Golden Retriever – Renaissance Royal</span></div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-1" data-category="renaissance">
+        <img src="images/portraits/02_renaissance_royal_cat.jpg" alt="Grå Katt Royal" loading="lazy">
+        <div class="gallery-overlay"><span>👑 Grå Katt – Renaissance Royal</span></div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-2" data-category="renaissance">
+        <img src="images/portraits/06_renaissance_royal_pug.jpg" alt="Pug Konge" loading="lazy">
+        <div class="gallery-overlay"><span>🐶 Pug – Renaissance Royal</span></div>
+      </div>
+      <div class="gallery-item fade-up" data-category="renaissance">
+        <img src="images/portraits/09_renaissance_royal_rabbit.jpg" alt="Hvit Kanin Konge" loading="lazy">
+        <div class="gallery-overlay"><span>🐰 Hvit Kanin – Renaissance Royal</span></div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-1" data-category="knight">
+        <img src="images/portraits/03_knight_military_dog.jpg" alt="Schäfer Ridder" loading="lazy">
+        <div class="gallery-overlay"><span>🎖️ Schäferhund – Ridder & Uniform</span></div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-2" data-category="knight">
+        <img src="images/portraits/07_knight_military_cat.jpg" alt="Svart Katt Ridder" loading="lazy">
+        <div class="gallery-overlay"><span>⚔️ Svart Katt – Ridder & Uniform</span></div>
+      </div>
+      <div class="gallery-item fade-up" data-category="victorian">
+        <img src="images/portraits/04_victorian_watercolor_cat.jpg" alt="Oransje Katt Victorian" loading="lazy">
+        <div class="gallery-overlay"><span>🌹 Oransje Katt – Victorian Akvarell</span></div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-1" data-category="victorian">
+        <img src="images/portraits/08_victorian_watercolor_dog.jpg" alt="Bichon Frise Victorian" loading="lazy">
+        <div class="gallery-overlay"><span>🌸 Bichon Frise – Victorian Akvarell</span></div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-2" data-category="premium">
+        <img src="images/portraits/05_pet_and_owner_royal.jpg" alt="Eier og Hund Royal" loading="lazy">
+        <div class="gallery-overlay"><span>👑 Eier + Cavalier – Pet + Owner Premium</span></div>
+      </div>
+    </div>
+
+    <div class="text-center mt-48 fade-up">
+      <a href="bestill.html" class="btn btn-primary">🎨 Bestill ditt portrett</a>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">DF</div>
+        <span>DevForge Pet Portraits</span>
+      </a>
+      <p>Premium AI-genererte renessanseportretter av dine kjæledyr. Skapt med kjærlighet i Fredrikstad, Norge.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigasjon</h4>
+      <a href="index.html">Hjem</a>
+      <a href="index.html#styles">Stiler</a>
+      <a href="bestill.html">Bestill</a>
+    </div>
+    <div class="footer-col">
+      <h4>Informasjon</h4>
+      <a href="faq.html">FAQ</a>
+      <a href="faq.html#personvern">Personvern</a>
+    </div>
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <a href="https://devforgelab.netlify.app" target="_blank">DevForge Web Agency</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 DevForge Pet Portraits</span>
+    <div class="footer-social">
+      <a href="#" target="_blank" aria-label="Instagram">📸</a>
+      <a href="#" target="_blank" aria-label="TikTok">🎵</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DevForge Pet Portraits – Forvandle ditt kjæledyr til et unikt renessansemesterverk. Bestill ditt AI-genererte portrett i dag!">
+  <meta property="og:title" content="DevForge Pet Portraits – Kongelige Portretter av Dine Kjæledyr">
+  <meta property="og:description" content="Forvandle ditt kjæledyr til et renessansemesterverk. AI-genererte portretter i premium kvalitet.">
+  <meta property="og:image" content="/images/portraits/01_renaissance_royal_dog.jpg">
+  <meta property="og:url" content="https://devforgelab.netlify.app/pet-portraits/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>DevForge Pet Portraits – Kongelige Portretter av Dine Kjæledyr</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>👑</text></svg>">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/pet-portraits/" class="nav-logo">
+      <div class="nav-logo-icon">DF</div>
+      <span>DevForge Pet Portraits</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#styles" class="active">Stiler</a></li>
+      <li><a href="#gallery">Galleri</a></li>
+      <li><a href="#pricing">Priser</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="bestill.html" class="nav-cta">Bestill nå →</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Meny">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-content fade-up">
+      <h1>Forvandle ditt kjæledyr<br>til et <span class="highlight">mesterverk</span></h1>
+      <p>AI-genererte renessanseportretter som fanger din hund eller katts unike personlighet. Hvert portrett er et kunstverk – skapt med kjærlighet og teknologi.</p>
+      <div class="hero-buttons">
+        <a href="bestill.html" class="btn btn-primary">🎨 Bestill ditt portrett</a>
+        <a href="#gallery" class="btn btn-secondary">Se galleri →</a>
+      </div>
+    </div>
+    <div class="hero-carousel fade-up fade-up-delay-2" id="heroCarousel">
+      <img src="images/portraits/01_renaissance_royal_dog.jpg" alt="Renaissance portrett av hund" class="active">
+      <img src="images/portraits/02_renaissance_royal_cat.jpg" alt="Renaissance portrett av katt">
+      <img src="images/portraits/03_knight_military_dog.jpg" alt="Ridderportrett av hund">
+      <img src="images/portraits/04_victorian_watercolor_cat.jpg" alt="Victorian akvarell portrett av katt">
+      <img src="images/portraits/05_pet_and_owner_royal.jpg" alt="Kongelig portrett av eier og hund">
+      <img src="images/portraits/06_renaissance_royal_pug.jpg" alt="Renaissance portrett av pug">
+      <img src="images/portraits/07_knight_military_cat.jpg" alt="Ridderportrett av katt">
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Styles Section -->
+<section class="section" id="styles">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <div class="section-tag">✨ Velg din stil</div>
+      <h2 class="section-title">Tre <span class="highlight">eksklusive</span> stiler</h2>
+      <p class="section-subtitle">Hver stil er designet for å fremheve ditt kjæledyrs unike personlighet og skape et minne for livet.</p>
+    </div>
+
+    <div class="styles-grid">
+      <div class="style-card fade-up fade-up-delay-1">
+        <div class="style-card-image">
+          <img src="images/portraits/01_renaissance_royal_dog.jpg" alt="Renaissance Royal stil" loading="lazy">
+        </div>
+        <div class="style-card-body">
+          <span class="badge badge-popular">🌟 Mest populær</span>
+          <h3>Renaissance Royal</h3>
+          <p>Klassisk oljemaling i barokkstil. Ditt kjæledyr som konge eller dronning med krone og kongekappe. Inspirert av de gamle mesterne.</p>
+        </div>
+      </div>
+
+      <div class="style-card fade-up fade-up-delay-2">
+        <div class="style-card-image">
+          <img src="images/portraits/03_knight_military_dog.jpg" alt="Ridder/Royal Uniform stil" loading="lazy">
+        </div>
+        <div class="style-card-body">
+          <span class="badge badge-new">🔥 Nyhet</span>
+          <h3>Ridder & Uniform</h3>
+          <p>Modig og majestetisk. Ditt kjæledyr i full ridderrustning eller militæruniform – perfekt for hunder med personlighet.</p>
+        </div>
+      </div>
+
+      <div class="style-card fade-up fade-up-delay-3">
+        <div class="style-card-image">
+          <img src="images/portraits/04_victorian_watercolor_cat.jpg" alt="Victorian Akvarell stil" loading="lazy">
+        </div>
+        <div class="style-card-body">
+          <span class="badge badge-premium">🎨 Elegant</span>
+          <h3>Victorian Akvarell</h3>
+          <p>Myk og romantisk akvarell i viktoriansk stil. Perfekt for katter og små dyr. Vintage-inspirert med blomsterramme.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="section" style="background: var(--bg-secondary);">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <div class="section-tag">📋 Slik fungerer det</div>
+      <h2 class="section-title">Ditt portrett i <span class="highlight">tre enkle steg</span></h2>
+      <p class="section-subtitle">Fra bilde til mesterverk på under 24 timer.</p>
+    </div>
+
+    <div class="how-grid">
+      <div class="how-step fade-up fade-up-delay-1">
+        <div class="how-step-number">1</div>
+        <h3>📸 Last opp bilde</h3>
+        <p>Last opp et godt bilde av ditt kjæledyr. Jo tydeligere bilde, jo bedre blir portrettet!</p>
+        <div class="how-arrow">→</div>
+      </div>
+
+      <div class="how-step fade-up fade-up-delay-2">
+        <div class="how-step-number">2</div>
+        <h3>✨ AI-generering</h3>
+        <p>Vår avanserte AI (Flux 2 Pro) skaper et unikt renessanseportrett basert på ditt bilde og valgt stil.</p>
+        <div class="how-arrow">→</div>
+      </div>
+
+      <div class="how-step fade-up fade-up-delay-3">
+        <div class="how-step-number">3</div>
+        <h3>🎉 Motta kunstverket</h3>
+        <p>Du får en forhåndsvisning innen 24 timer. Godkjenn, og vi sender deg det ferdige portrettet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Before/After -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <div class="section-tag">🔍 Før og etter</div>
+      <h2 class="section-title">Fra <span class="highlight">hverdagsbilde</span> til mesterverk</h2>
+      <p class="section-subtitle">Se selv hvordan et vanlig bilde blir til et unikt renessanseportrett.</p>
+    </div>
+
+    <div class="before-after fade-up">
+      <div class="ba-panel">
+        <img src="images/portraits/06_renaissance_royal_pug.jpg" alt="Renaissance portrett">
+        <span class="ba-label">🖼️ Portrett</span>
+      </div>
+      <div class="ba-panel">
+        <img src="images/portraits/02_renaissance_royal_cat.jpg" alt="Renaissance portrett katt">
+        <span class="ba-label">🖼️ Portrett</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Preview -->
+<section class="section" id="gallery" style="background: var(--bg-secondary);">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <div class="section-tag">🖼️ Galleri</div>
+      <h2 class="section-title">Våre <span class="highlight">nyeste portretter</span></h2>
+      <p class="section-subtitle">Hvert portrett er unikt – akkurat som ditt kjæledyr.</p>
+    </div>
+
+    <div class="gallery-filters fade-up">
+      <button class="filter-btn active" data-filter="all">Alle</button>
+      <button class="filter-btn" data-filter="renaissance">Renaissance Royal</button>
+      <button class="filter-btn" data-filter="knight">Ridder & Uniform</button>
+      <button class="filter-btn" data-filter="victorian">Victorian Akvarell</button>
+      <button class="filter-btn" data-filter="premium">Pet + Eier</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item fade-up" data-category="renaissance">
+        <img src="images/portraits/01_renaissance_royal_dog.jpg" alt="Renaissance Royal Hund" loading="lazy">
+        <div class="gallery-overlay"><span>🌟 Golden Retriever Royal</span></div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-1" data-category="renaissance">
+        <img src="images/portraits/02_renaissance_royal_cat.jpg" alt="Renaissance Royal Katt" loading="lazy">
+        <div class="gallery-overlay"><span>👑 Grå Katt Royal</span></div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-2" data-category="renaissance">
+        <img src="images/portraits/06_renaissance_royal_pug.jpg" alt="Renaissance Royal Pug" loading="lazy">
+        <div class="gallery-overlay"><span>🐶 Pug Konge</span></div>
+      </div>
+      <div class="gallery-item fade-up" data-category="knight">
+        <img src="images/portraits/03_knight_military_dog.jpg" alt="Ridderportrett Hund" loading="lazy">
+        <div class="gallery-overlay"><span>🎖️ Schäfer Ridder</span></div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-1" data-category="knight">
+        <img src="images/portraits/07_knight_military_cat.jpg" alt="Ridderportrett Katt" loading="lazy">
+        <div class="gallery-overlay"><span>⚔️ Svart Katt Ridder</span></div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-2" data-category="victorian">
+        <img src="images/portraits/04_victorian_watercolor_cat.jpg" alt="Victorian Katt" loading="lazy">
+        <div class="gallery-overlay"><span>🌹 Oransje Katt Victoria</span></div>
+      </div>
+      <div class="gallery-item fade-up" data-category="victorian">
+        <img src="images/portraits/08_victorian_watercolor_dog.jpg" alt="Victorian Hund" loading="lazy">
+        <div class="gallery-overlay"><span>🌸 Bichon Frise Victoria</span></div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-1" data-category="renaissance">
+        <img src="images/portraits/09_renaissance_royal_rabbit.jpg" alt="Renaissance Royal Kanin" loading="lazy">
+        <div class="gallery-overlay"><span>🐰 Hvit Kanin Konge</span></div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-2" data-category="premium">
+        <img src="images/portraits/05_pet_and_owner_royal.jpg" alt="Pet + Owner Royal" loading="lazy">
+        <div class="gallery-overlay"><span>👑 Eier + Cavalier Royal</span></div>
+      </div>
+    </div>
+
+    <div class="text-center mt-48 fade-up">
+      <a href="bestill.html" class="btn btn-primary">🎨 Bestill ditt portrett</a>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="section" id="pricing">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <div class="section-tag">💰 Priser</div>
+      <h2 class="section-title">Velg din <span class="highlight">pakke</span></h2>
+      <p class="section-subtitle">Premium kvalitet til en pris som passer. Alle portretter er håndlaget av AI og kvalitetssikret.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="pricing-card fade-up">
+        <div class="pricing-name">Digital</div>
+        <div class="pricing-price">249 <span>kr</span></div>
+        <div class="pricing-desc">Høyoppløselig digital fil – perfekt for deling og utskrift</div>
+        <ul class="pricing-features">
+          <li>Høyoppløselig JPEG (1024×768)</li>
+          <li>Utskriftsklar kvalitet</li>
+          <li>Levert på e-post innen 24 timer</li>
+          <li>Fri bruk til personlige formål</li>
+          <li>2 gratis revisjoner</li>
+        </ul>
+        <a href="bestill.html?plan=digital" class="btn btn-secondary">Velg Digital →</a>
+      </div>
+
+      <div class="pricing-card featured fade-up fade-up-delay-1">
+        <div class="pricing-badge">🌟 Mest populær</div>
+        <div class="pricing-name">Canvas</div>
+        <div class="pricing-price">599 <span>kr</span></div>
+        <div class="pricing-desc">Trykt på premium lerret – klar til å henge på veggen</div>
+        <ul class="pricing-features">
+          <li>Canvas 30×40 cm</li>
+          <li>Premium kvalitet lerret</li>
+          <li>Gratis frakt i Norge</li>
+          <li>Levert på døren innen 5 dager</li>
+          <li>Forhåndsvisning før trykk</li>
+          <li>2 gratis revisjoner</li>
+        </ul>
+        <a href="bestill.html?plan=canvas" class="btn btn-primary">Velg Canvas →</a>
+      </div>
+
+      <div class="pricing-card fade-up fade-up-delay-2">
+        <div class="pricing-name">Premium</div>
+        <div class="pricing-price">999 <span>kr</span></div>
+        <div class="pricing-desc">Innrammet med valgfri ramme + custom tekst</div>
+        <ul class="pricing-features">
+          <li>Canvas 50×70 cm</li>
+          <li>Valgfri ramme (sort/hvit/eik)</li>
+          <li>Custom tekst på rammen (+99 kr)</li>
+          <li>Gratis frakt i Norge</li>
+          <li>Levert på døren innen 5 dager</li>
+          <li>Forhåndsvisning før trykk</li>
+          <li>3 gratis revisjoner</li>
+        </ul>
+        <a href="bestill.html?plan=premium" class="btn btn-secondary">Velg Premium →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Preview -->
+<section class="section" style="background: var(--bg-secondary);">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <div class="section-tag">❓ Spørsmål</div>
+      <h2 class="section-title">Vanlige <span class="highlight">spørsmål</span></h2>
+      <p class="section-subtitle">Har du flere spørsmål? <a href="faq.html">Se hele FAQ-en</a></p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item fade-up">
+        <button class="faq-question">Hvor lang tid tar det å få portrettet?</button>
+        <div class="faq-answer">Du får en digital forhåndsvisning innen 24 timer. Godkjenner du samme dag, sendes fysiske produkter innen 1-2 dager. Leveringstid i Norge er 2-5 dager.</div>
+      </div>
+      <div class="faq-item fade-up">
+        <button class="faq-question">Hva slags bilde bør jeg laste opp?</button>
+        <div class="faq-answer">Et tydelig bilde med godt lys, hvor kjæledyrets ansikt er synlig. Minst 800×800 px oppløsning, maks 10 MB. JPEG eller PNG. Unngå uskarpe eller mørke bilder.</div>
+      </div>
+      <div class="faq-item fade-up">
+        <button class="faq-question">Er portrettene håndmalte eller AI-genererte?</button>
+        <div class="faq-answer">Portrettene er skapt med avansert AI-teknologi (Flux 2 Pro) som gir resultater på nivå med håndmalte oljemalerier. Hvert portrett er unikt og kvalitetssikres før levering.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/pet-portraits/" class="nav-logo">
+        <div class="nav-logo-icon">DF</div>
+        <span>DevForge Pet Portraits</span>
+      </a>
+      <p>Premium AI-genererte renessanseportretter av dine kjæledyr. Skapt med kjærlighet i Fredrikstad, Norge.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigasjon</h4>
+      <a href="index.html#styles">Stiler</a>
+      <a href="index.html#gallery">Galleri</a>
+      <a href="index.html#pricing">Priser</a>
+      <a href="bestill.html">Bestill</a>
+    </div>
+    <div class="footer-col">
+      <h4>Informasjon</h4>
+      <a href="faq.html">FAQ</a>
+      <a href="faq.html#personvern">Personvern</a>
+      <a href="faq.html#levering">Levering</a>
+    </div>
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <a href="https://devforgelab.netlify.app" target="_blank">DevForge Web Agency</a>
+      <a href="mailto:hojat10@icloud.com">E-post</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 DevForge Pet Portraits. Alle rettigheter reservert.</span>
+    <div class="footer-social">
+      <a href="#" target="_blank" aria-label="Instagram">📸</a>
+      <a href="#" target="_blank" aria-label="TikTok">🎵</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

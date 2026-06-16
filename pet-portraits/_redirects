@@ -1,0 +1,3 @@
+# Netlify redirects for DevForge Pet Portraits
+/pet-portraits/*    /pet-portraits/index.html   200
+/pet-portraits/404  /pet-portraits/404.html    404
