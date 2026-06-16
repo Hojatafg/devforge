@@ -432,6 +432,8 @@ ul {
   max-width: 800px;
   position: relative;
   z-index: 1;
+  width: 100%;
+  overflow: hidden;
 }
 
 .hero-badge {
@@ -518,7 +520,10 @@ ul {
 
 @media (max-width: 768px) {
   .hero-logo-img {
-    max-width: 90%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: min(100%, 680px);
     margin: 0 auto;
   }
   .hero-tagline {
@@ -527,6 +532,23 @@ ul {
   .hero-proof {
     gap: 16px;
   }
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .hero-stats {

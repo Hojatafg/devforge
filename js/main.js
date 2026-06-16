@@ -214,7 +214,7 @@
     'position:fixed;bottom:0;left:0;right:0;z-index:9999;' +
     'background:var(--bg-section,#1e293b);border-top:1px solid var(--border-color,#334155);' +
     'padding:16px 24px;display:flex;align-items:center;justify-content:space-between;' +
-    'flex-wrap:wrap;gap:12px;font-size:0.9rem;color:var(--text-light,#f1f5f9);';
+    'flex-wrap:wrap;gap:12px;font-size:0.9rem;color:var(--text-light,#f1f5f9);box-sizing:border-box;overflow-x:hidden;';
 
   var text = document.createElement('span');
   text.style.cssText = 'flex:1;min-width:200px;line-height:1.6;';
