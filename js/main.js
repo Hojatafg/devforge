@@ -229,6 +229,7 @@
   'use strict';
 
   if (localStorage.getItem('cookieConsent')) return;
+  document.body.classList.add('has-cookie-banner');
 
   var banner = document.createElement('div');
   banner.id = 'cookie-banner';
@@ -256,6 +257,7 @@
   acceptBtn.addEventListener('click', function() {
     localStorage.setItem('cookieConsent', 'accepted');
     banner.remove();
+    document.body.classList.remove('has-cookie-banner');
   });
 
   btnDiv.appendChild(acceptBtn);

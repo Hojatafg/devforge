@@ -1,0 +1,123 @@
+{
+  "release_gate": {
+    "name": "ForgeGuard Release Gate — 2026-06-17",
+    "type": "stabilization_gate",
+    "note": "Post-deploy stabilisering. Fremover skal denne gates kjøres pre-deploy (Gate 1 + Gate 2).",
+    "timestamp": "2026-06-17T20:52:26Z",
+    "commits": "2881c24..48ef61c (8 commits)",
+    "deploy_url": "http://72.62.94.245/",
+    "pages_checked": 17,
+    "viewport_checks": ["desktop", "mobile (<768px)"],
+    "sections": {
+      "1_hero_animations": {
+        "status": "PASS",
+        "checks": [
+          {"name": "Desktop hero status", "result": "PASS", "detail": "HTTP 200"},
+          {"name": "Canvas on desktop", "result": "PASS", "detail": "hero-canvas element exists"},
+          {"name": "Reduced-motion CSS", "result": "PASS", "detail": "4 prefers-reduced-motion rules"},
+          {"name": "Parallax-delay computed 0ms", "result": "PASS", "detail": "parallax-ready class added after 1500ms, CSS transition-delay: 0ms !important"},
+          {"name": "Canvas hidden on mobile", "result": "PASS", "detail": "display:none at max-width:767px"},
+          {"name": "Orbital icons (8)", "result": "PASS", "detail": "8 orbit-icon elements found"},
+          {"name": "Section-reveal animations", "result": "PASS", "detail": "section-reveal + stagger-grid classes in HTML + CSS"}
+        ]
+      },
+      "2_telegram_lang_nav": {
+        "status": "PASS",
+        "checks": [
+          {"name": "Telegram button exists", "result": "PASS", "detail": "telegram-btn class found"},
+          {"name": "Telegram href correct", "result": "PASS", "detail": "t.me/hajo101378"},
+          {"name": "Language switcher exists", "result": "PASS", "detail": "lang-switcher + lang-dropdown"},
+          {"name": "Nav CTA button", "result": "PASS", "detail": "nav-cta class found"},
+          {"name": "Mobile nav toggle", "result": "PASS", "detail": "nav-toggle class found"},
+          {"name": "Estimator in nav", "result": "PASS", "detail": "estimator.html link in nav"}
+        ]
+      },
+      "3_about_team_svg": {
+        "status": "PASS",
+        "checks": [
+          {"name": "About page 200", "result": "PASS", "detail": "HTTP 200"},
+          {"name": "Hajo avatar", "result": "PASS", "detail": "hajo-avatar.svg loaded"},
+          {"name": "Yusuf avatar", "result": "PASS", "detail": "yusuf-avatar.svg loaded"},
+          {"name": "SVG icons replace emojis", "result": "PASS", "detail": "3 icon-grad SVGs in values section, no 🤝✨🚀"},
+          {"name": "CTA button uses SVG", "result": "PASS", "detail": "Send us a message with message SVG icon"}
+        ]
+      },
+      "4_estimator": {
+        "status": "PASS",
+        "checks": [
+          {"name": "Estimator page 200", "result": "PASS", "detail": "HTTP 200"},
+          {"name": "Platform buttons (3)", "result": "PASS", "detail": "3 platform-btn elements"},
+          {"name": "Scale slider", "result": "PASS", "detail": "scaleSlider input + slider-fill"},
+          {"name": "Feature buttons (4)", "result": "PASS", "detail": "4 feature-btn elements"},
+          {"name": "Budget display", "result": "PASS", "detail": "result-budget element"},
+          {"name": "CTA button", "result": "PASS", "detail": "btn-estimate class, white bg"},
+          {"name": "Disclaimer", "result": "PASS", "detail": "result-disclaimer present"},
+          {"name": "Estimator JS loads", "result": "PASS", "detail": "HTTP 200, pricing logic verified"},
+          {"name": "Desktop layout", "result": "PASS", "detail": "2-column grid"},
+          {"name": "Mobile layout", "result": "PASS", "detail": "Single column at <768px"}
+        ]
+      },
+      "5_global_logo": {
+        "status": "PASS",
+        "checks": [
+          {"name": "Nav logo uses concept-3-final", "result": "PASS", "detail": "All nav logos updated"},
+          {"name": "Hero logo uses concept-3-final", "result": "PASS", "detail": "WebP + PNG fallback"},
+          {"name": "Footer logo uses concept-3-final", "result": "PASS", "detail": "18 pages fixed, all now use correct logo"},
+          {"name": "Logo asset accessible", "result": "PASS", "detail": "HTTP 200 for .webp and .png"},
+          {"name": "No old devforge-logo.png refs", "result": "PASS", "detail": "0 references in nav/footer HTML"}
+        ],
+        "issues_fixed_during_gate": [
+          "Footer logo var ikke oppdatert på 18 sider (blokkerende → rettet og deployet)"
+        ]
+      },
+      "6_portfolio_johnnys": {
+        "status": "PASS",
+        "checks": [
+          {"name": "Portfolio page 200", "result": "PASS", "detail": "HTTP 200"},
+          {"name": "Johnny's Pizza content removed", "result": "PASS", "detail": "0 references in portfolio HTML"},
+          {"name": "Johnny's Pizza OG meta removed", "result": "PASS", "detail": "0 references in og:description"},
+          {"name": "No broken internal links", "result": "PASS", "detail": "All nav links verified"}
+        ]
+      },
+      "7_sitemap_config_domain": {
+        "status": "PASS_WITH_KNOWN_BLOCKER",
+        "checks": [
+          {"name": "Sitemap accessible", "result": "PASS", "detail": "HTTP 200, 22 URLs"},
+          {"name": "robots.txt accessible", "result": "PASS", "detail": "HTTP 200"},
+          {"name": "config.js accessible", "result": "PASS", "detail": "HTTP 200, SITE_URL configurable"},
+          {"name": "migrate-domain.py exists", "result": "PASS", "detail": "HTTP 200"},
+          {"name": "SITE_URL sentralisert", "result": "PASS", "detail": "js/config.js + structured-data.js reads from config"},
+          {"name": "Netlify URLs in sitemap", "result": "BLOCKED_BY_DOMAIN", "detail": "28 netlify.app refs i sitemap — kan ikke fikses før devforgelab.eu er aktivt"}
+        ],
+        "blocked_by": "Domain devforgelab.eu pending hos Domeneshop"
+      }
+    },
+    "blocking_issues": [
+      {
+        "id": "NETLIFY_URLS_IN_SITEMAP",
+        "severity": "blocking",
+        "status": "BLOCKED_BY_DOMAIN",
+        "description": "Sitemap.xml, robots.txt, canonical, OG, hreflang og JSON-LD bruker devforgelab.netlify.app. Kan ikke rettes før devforgelab.eu er aktivt.",
+        "resolution": "Kjør migrate-domain.py når domenet er aktivt. Domain Readiness Checklist ligger i .hermes/forgeguard/domain-readiness-checklist.md"
+      }
+    ],
+    "warnings": [
+      {
+        "id": "SVG_ICONS_PARTIAL",
+        "severity": "warning",
+        "description": "Emojis på andre sider (index-no, services, blog, kontakt) er ikke erstattet med SVG-ikoner. Kun about.html values-seksjonen er fikset."
+      }
+    ],
+    "known_limitations": [
+      "Netlify credits oppbrukt — deploy kun til VPS (72.62.94.245)",
+      "Domain devforgelab.eu pending hos Domeneshop — SEO-lansering blokkert",
+      "Første ForgeGuard-kjøring er post-deploy stabilisering, ikke pre-deploy (ny workflow fremover)",
+      "Full SEO-audit venter på domene — første audit ligger i .hermes/forgeguard/seo-audit-report.md"
+    ],
+    "verdict": {
+      "feature_ui_release": "READY_FOR_CODEX_REVIEW",
+      "seo_domain_release": "BLOCKED_BY_DOMAIN",
+      "note": "Feature/UI-arbeid er klart for review. SEO-lansering blokkert: devforgelab.eu pending hos Domeneshop, Netlify-base i sitemap/config/canonical/SEO-flater."
+    }
+  }
+}

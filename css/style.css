@@ -2089,6 +2089,17 @@ ul {
   }
 }
 
+/* Move Telegram button above cookie banner on first visit */
+.has-cookie-banner .telegram-btn {
+  bottom: 96px;
+}
+
+@media (max-width: 768px) {
+  .has-cookie-banner .telegram-btn {
+    bottom: 80px;
+  }
+}
+
 /* ==========================================
  * MOTION ANIMATIONS — Scroll-reveal,
  * staggered cards, counter improvements
@@ -2317,7 +2328,7 @@ ul {
 
 /* ===== ESTIMATOR PAGE (match reference design) ===== */
 .estimator-page {
-  padding: 60px 24px 80px;
+  padding: calc(var(--nav-height) + 48px) 24px 80px;
   max-width: 1100px;
   margin: 0 auto;
 }
