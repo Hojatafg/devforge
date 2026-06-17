@@ -59,20 +59,13 @@
         <a href="estimator.html">Kalkulator</a>
         <a href="contact-no.html" class="nav-cta">Kontakt</a>
         <div class="lang-switcher">
-          <button class="lang-btn" id="langBtn" aria-expanded="false" aria-label="Velg språk">
-            <svg viewBox="0 0 24 18" aria-hidden="true"><rect width="24" height="18" fill="#ef2b2d"/><rect x="6" width="4" height="18" fill="#fff"/><rect y="7" width="24" height="4" fill="#fff"/><rect x="7" width="2" height="18" fill="#002868"/><rect y="8" width="24" height="2" fill="#002868"/></svg>
+          <button class="lang-btn" id="langBtn" aria-expanded="false" aria-haspopup="true" aria-label="Velg språk">
             <span>NO</span>
             <svg class="lang-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
-          <div class="lang-dropdown" id="langDropdown">
-            <a href="index-no.html" class="active">
-              <svg viewBox="0 0 24 18" aria-hidden="true"><rect width="24" height="18" fill="#ef2b2d"/><rect x="6" width="4" height="18" fill="#fff"/><rect y="7" width="24" height="4" fill="#fff"/><rect x="7" width="2" height="18" fill="#002868"/><rect y="8" width="24" height="2" fill="#002868"/></svg>
-              Norsk
-            </a>
-            <a href="index.html">
-              <svg viewBox="0 0 24 18" aria-hidden="true"><rect width="24" height="6" fill="#012169"/><rect y="6" width="24" height="6" fill="#fff"/><rect y="12" width="24" height="6" fill="#012169"/><rect x="9" width="6" height="18" fill="#fff"/><rect x="0" y="7" width="24" height="4" fill="#C8102E"/><rect x="11" y="0" width="2" height="18" fill="#C8102E"/></svg>
-              English
-            </a>
+          <div class="lang-dropdown" id="langDropdown" role="listbox">
+            <a href="index-no.html" class="active" role="option" aria-selected="true">Norsk</a>
+            <a href="index.html" role="option" aria-selected="false">English</a>
           </div>
         </div>
       </div>

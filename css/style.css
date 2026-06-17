@@ -1950,28 +1950,111 @@ ul {
   }
 }
 
+/* ==========================================
+ * ORBITAL ICONS — floating around hero logo
+ * ========================================== */
+
+.orbital-icons {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  width: 320px;
+  height: 320px;
+  transform: translateY(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.orbit-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 44px;
+  height: 44px;
+  margin: -22px 0 0 -22px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6366f1;
+  animation: orbit-spin 20s linear infinite;
+  transform-origin: center;
+}
+
+.orbit-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* Each icon at a different angle */
+.orbit-icon-1 { animation-delay: 0s; }
+.orbit-icon-2 { animation-delay: -2.5s; }
+.orbit-icon-3 { animation-delay: -5s; }
+.orbit-icon-4 { animation-delay: -7.5s; }
+.orbit-icon-5 { animation-delay: -10s; }
+.orbit-icon-6 { animation-delay: -12.5s; }
+.orbit-icon-7 { animation-delay: -15s; }
+.orbit-icon-8 { animation-delay: -17.5s; }
+
+@keyframes orbit-spin {
+  0% {
+    transform: rotate(0deg) translateX(130px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(130px) rotate(-360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .orbital-icons { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit-icon { animation: none; display: none; }
+}
+
 /* ===== TELEGRAM FLOATING BUTTON ===== */
 .telegram-btn {
   position: fixed;
   bottom: 24px;
-  right: 24px;
+  left: 24px;
   z-index: 9999;
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   background: var(--gradient-1);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-decoration: none;
+  animation: telegram-pop-in 0.6s ease-out forwards, telegram-wiggle 3s ease-in-out 1.5s infinite;
+  opacity: 0;
+  transform-origin: center;
+}
+
+@keyframes telegram-pop-in {
+  0% { opacity: 0; transform: scale(0); }
+  60% { opacity: 1; transform: scale(1.15); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes telegram-wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  15% { transform: rotate(8deg) scale(1.05); }
+  30% { transform: rotate(-6deg) scale(1.05); }
+  45% { transform: rotate(4deg) scale(1.05); }
+  60% { transform: rotate(-2deg); }
+  80% { transform: rotate(1deg); }
 }
 
 .telegram-btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 24px rgba(99, 102, 241, 0.5);
+  transform: scale(1.15);
+  box-shadow: 0 6px 28px rgba(99, 102, 241, 0.6);
 }
 
 .telegram-btn:focus-visible {
@@ -1979,8 +2062,26 @@ ul {
   outline-offset: 3px;
 }
 
+.telegram-btn svg {
+  width: 30px;
+  height: 30px;
+}
+
 @media print {
   .telegram-btn { display: none; }
+}
+
+@media (max-width: 768px) {
+  .telegram-btn {
+    width: 56px;
+    height: 56px;
+    bottom: 16px;
+    left: 16px;
+  }
+  .telegram-btn svg {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 /* ==========================================
@@ -2066,7 +2167,7 @@ ul {
   background: rgba(99, 102, 241, 0.08);
 }
 
-.lang-btn svg {
+.lang-btn svg:not(.lang-arrow) {
   width: 18px;
   height: 18px;
   border-radius: 2px;
@@ -2177,9 +2278,15 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--primary-light);
+  overflow: hidden;
+}
+
+.team-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
 }
 
 .team-member h3 {
@@ -2349,17 +2456,24 @@ ul {
 }
 
 .estimator-result .result-budget {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 800;
   background: var(--gradient-1);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 4px;
+  margin-bottom: 0;
+  line-height: 1.1;
 }
 
 .estimator-result .result-budget-sub {
   font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.estimator-result .result-budget-plus {
+  font-size: 1rem;
   color: var(--text-muted);
   margin-bottom: 24px;
 }
@@ -2389,9 +2503,34 @@ ul {
   margin-top: 24px;
 }
 
-.result-cta .btn {
+.result-cta .btn-estimate {
   width: 100%;
+  padding: 14px 24px;
+  background: #fff;
+  color: #0f172a;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.result-cta .btn-estimate:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+}
+
+.result-cta .btn-estimate svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 .result-disclaimer {

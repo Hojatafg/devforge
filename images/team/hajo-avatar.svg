@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="ring-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="98" fill="url(#ring-grad)"/>
+  <!-- White inner -->
+  <circle cx="100" cy="100" r="93" fill="#fff"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="105" rx="42" ry="48" fill="#f5d0b8"/>
+  <!-- Hair (short dark) -->
+  <path d="M58 90 Q58 50 78 48 Q100 40 122 48 Q142 50 142 90 Q140 70 130 65 Q115 58 100 60 Q85 58 70 65 Q60 70 58 90Z" fill="#2d1b0e"/>
+  <!-- Eyebrows -->
+  <path d="M78 88 Q88 84 95 88" stroke="#5c3a1e" stroke-width="2" fill="none"/>
+  <path d="M105 88 Q112 84 122 88" stroke="#5c3a1e" stroke-width="2" fill="none"/>
+  <!-- Eyes -->
+  <ellipse cx="85" cy="96" rx="5" ry="4" fill="#2d1b0e"/>
+  <ellipse cx="115" cy="96" rx="5" ry="4" fill="#2d1b0e"/>
+  <circle cx="86" cy="95" r="1.5" fill="#fff"/>
+  <circle cx="116" cy="95" r="1.5" fill="#fff"/>
+  <!-- Nose -->
+  <path d="M98 100 Q100 108 102 100" stroke="#c49a7a" stroke-width="1.5" fill="none"/>
+  <!-- Smile -->
+  <path d="M85 114 Q100 124 115 114" stroke="#c49a7a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Collar/shirt -->
+  <path d="M75 148 L100 140 L125 148 L135 170 L65 170 Z" fill="#e2e8f0"/>
+  <path d="M100 140 L100 170" stroke="#cbd5e1" stroke-width="1"/>
+</svg>
