@@ -7,8 +7,10 @@
 (function() {
   'use strict';
 
-  const BASE_URL = 'https://devforgelab.netlify.app';
-  const SITE_NAME = 'DevForge';
+  /* Read base URL from central config, with fallback */
+  var cfg = window.DEVFORGE_CONFIG || {};
+  var BASE_URL = cfg.SITE_URL || 'https://devforgelab.netlify.app';
+  var SITE_NAME = cfg.SITE_NAME || 'DevForge';
 
   /* ---------- Organization + LocalBusiness ---------- */
   const organizationSchema = {
