@@ -1893,6 +1893,16 @@ ul {
   border-color: rgba(99, 102, 241, 0.5);
 }
 
+/* ===== PARALLAX-READY: reset entrance delays after intro ===== */
+.hero.parallax-ready .hero-badge,
+.hero.parallax-ready .hero-logo-area,
+.hero.parallax-ready .hero-content h1,
+.hero.parallax-ready .hero-tagline,
+.hero.parallax-ready .hero-actions,
+.hero.parallax-ready .hero-proof {
+  transition-delay: 0ms !important;
+}
+
 /* ===== MOBILE & REDUCED MOTION OVERRIDES ===== */
 
 /* Canvas off on mobile */

@@ -380,21 +380,7 @@
 
   /* ---- Clear entrance transition-delay after intro (so scroll-parallax isn't sticky) ---- */
   setTimeout(function() {
-    var els = [
-      heroBadge,
-      heroLogo,
-      heroTagline,
-      heroActions,
-      heroProof
-    ];
-    for (var i = 0; i < els.length; i++) {
-      if (els[i]) els[i].style.transitionDelay = '';
-    }
-    // Also clear the rule on hero-content children
-    var fadeChildren = document.querySelectorAll('.hero-content.fade-in .hero-logo-area, .hero-content.fade-in h1');
-    for (var i = 0; i < fadeChildren.length; i++) {
-      fadeChildren[i].style.transitionDelay = '';
-    }
+    if (hero) hero.classList.add('parallax-ready');
   }, 1500); // after all staggered entrance animations have finished
 
   /* ==========================================
