@@ -253,6 +253,10 @@
   var canvas = document.getElementById('hero-canvas');
   if (!canvas) return; // No hero canvas on this page
 
+  // Guard: skip particles on reduced motion
+  var rm = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (rm.matches) { canvas.style.display = 'none'; return; }
+
   var COLORS = ['#6366f1', '#06b6d4'];
   var MAX_PARTICLES = window.innerWidth < 768 ? 0
     : window.innerWidth <= 1024 ? 15
@@ -374,6 +378,25 @@
   /* Mark canvas as loaded (triggers CSS fade-in) */
   canvas.classList.add('loaded');
 
+  /* ---- Clear entrance transition-delay after intro (so scroll-parallax isn't sticky) ---- */
+  setTimeout(function() {
+    var els = [
+      heroBadge,
+      heroLogo,
+      heroTagline,
+      heroActions,
+      heroProof
+    ];
+    for (var i = 0; i < els.length; i++) {
+      if (els[i]) els[i].style.transitionDelay = '';
+    }
+    // Also clear the rule on hero-content children
+    var fadeChildren = document.querySelectorAll('.hero-content.fade-in .hero-logo-area, .hero-content.fade-in h1');
+    for (var i = 0; i < fadeChildren.length; i++) {
+      fadeChildren[i].style.transitionDelay = '';
+    }
+  }, 1500); // after all staggered entrance animations have finished
+
   /* ==========================================
    * SCROLL PARALLAX
    * ========================================== */
@@ -422,7 +445,7 @@
       var t = parallaxTargets[i];
       var localProgress = (scrollProgress - t.start) / (t.end - t.start);
       localProgress = Math.min(1, Math.max(0, localProgress));
-      // ease-out cubic
+      // ease-out quadratic
       var eased = 1 - Math.pow(1 - localProgress, 2);
       var opacity = 1 - eased;
       var scale = t.el === heroLogo ? 1 - (eased * 0.10) : 1;
