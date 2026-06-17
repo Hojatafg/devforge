@@ -1,24 +1,31 @@
 /* ==========================================
  * DevForge — Project Estimator
  * Interactive cost calculator
+ * Matches DevForge's actual pricing
  * ========================================== */
 (function() {
   'use strict';
 
-  /* ---- Pricing matrix ---- */
+  /* ---- DevForge real pricing ---- */
   var PRICES = {
+    // Base: Kickstart landing page
+    base: 1500,
+    // Platform add-ons
     platform: { web: 0, mobile: 1500, both: 3500 },
-    scale: { 0: 0, 1: 2500, 2: 6000 },
-    features: { auth: 800, payments: 1200, ai: 2500, cms: 2000 }
+    // Scale: MVP = Kickstart, Growth = Standard, Enterprise = Premium
+    scale: { 0: 0, 1: 1500, 2: 3500 },
+    // Feature add-ons
+    features: { auth: 800, payments: 1200, ai: 2000, cms: 1500 }
   };
 
   var TIMELINE = ['1-2 Months', '2-3 Months', '4-6 Months'];
-  var TEAM = ['2 Engineers', '4 Engineers', '6+ Engineers'];
+  var TEAM = ['2 Engineers', '3-4 Engineers', '5+ Engineers'];
   var SUPPORT = ['1 Month Priority', '3 Months Priority', '6 Months Priority'];
 
   /* ---- DOM refs ---- */
   var platformBtns = document.querySelectorAll('#platformGroup .platform-btn');
   var scaleSlider = document.getElementById('scaleSlider');
+  var sliderFill = document.getElementById('sliderFill');
   var featureBtns = document.querySelectorAll('#featuresGrid .feature-btn');
   var scaleLabels = document.querySelectorAll('.scale-labels span');
 
@@ -26,7 +33,6 @@
   var resultTimeline = document.getElementById('resultTimeline');
   var resultTeam = document.getElementById('resultTeam');
   var resultSupport = document.getElementById('resultSupport');
-  var resultNote = document.getElementById('resultNote');
 
   if (!resultBudget) return; // not on estimator page
 
@@ -39,7 +45,7 @@
 
   /* ---- Calculate ---- */
   function calculate() {
-    var base = 1500; // Starting price
+    var base = PRICES.base;
     var platformCost = PRICES.platform[state.platform] || 0;
     var scaleCost = PRICES.scale[state.scale] || 0;
     var featuresCost = 0;
@@ -57,9 +63,9 @@
     resultTeam.textContent = TEAM[state.scale];
     resultSupport.textContent = SUPPORT[state.scale];
 
-    if (total <= 3000) resultNote.textContent = 'Starting at this range';
-    else if (total <= 8000) resultNote.textContent = 'Mid-range project estimate';
-    else resultNote.textContent = 'Enterprise-grade investment';
+    // Update slider fill
+    var fillPct = ((state.scale / 2) * 100) + '%';
+    sliderFill.style.width = fillPct;
   }
 
   /* ---- Platform buttons ---- */
