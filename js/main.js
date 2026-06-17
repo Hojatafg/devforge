@@ -241,3 +241,209 @@
   banner.appendChild(btnDiv);
   document.body.appendChild(banner);
 })();
+
+/* ==========================================
+ * HERO ANIMATIONS — Particle system +
+ * scroll parallax (standalone, no deps)
+ * ========================================== */
+(function() {
+  'use strict';
+
+  /* ---- Constants ---- */
+  var canvas = document.getElementById('hero-canvas');
+  if (!canvas) return; // No hero canvas on this page
+
+  var COLORS = ['#6366f1', '#06b6d4'];
+  var MAX_PARTICLES = window.innerWidth < 768 ? 0
+    : window.innerWidth <= 1024 ? 15
+    : 22;
+  if (MAX_PARTICLES === 0) { canvas.style.display = 'none'; return; }
+
+  /* ---- Canvas setup ---- */
+  var ctx = canvas.getContext('2d');
+  var dpr = window.devicePixelRatio || 1;
+
+  function resizeCanvas() {
+    var w = canvas.parentElement.offsetWidth;
+    var h = canvas.parentElement.offsetHeight;
+    canvas.width = w * dpr;
+    canvas.height = h * dpr;
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  resizeCanvas();
+
+  /* ---- Debounced resize ---- */
+  var resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      resizeCanvas();
+      // Recalculate particle positions proportionally
+      for (var i = 0; i < particles.length; i++) {
+        var p = particles[i];
+        p.x = p.x * (canvas.width / dpr) / (prevW || 1);
+        p.y = p.y * (canvas.height / dpr) / (prevH || 1);
+      }
+      prevW = canvas.width / dpr;
+      prevH = canvas.height / dpr;
+    }, 250);
+  });
+  var prevW = canvas.width / dpr;
+  var prevH = canvas.height / dpr;
+
+  /* ---- Particle system ---- */
+  var particles = [];
+  var w = canvas.width / dpr;
+  var h = canvas.height / dpr;
+
+  function createParticle(respawn) {
+    return {
+      x: respawn ? Math.random() * w : Math.random() * w,
+      y: respawn ? -5 : Math.random() * h,
+      size: 1 + Math.random() * 2,        // 1–3px
+      speed: 0.15 + Math.random() * 0.25,  // vary float speed
+      opacity: 0.15 + Math.random() * 0.15, // 0.15–0.30
+      color: COLORS[Math.floor(Math.random() * COLORS.length)],
+      phase: Math.random() * Math.PI * 2    // horizontal drift offset
+    };
+  }
+
+  for (var i = 0; i < MAX_PARTICLES; i++) {
+    particles.push(createParticle(false));
+  }
+
+  function updateParticles() {
+    w = canvas.width / dpr;
+    h = canvas.height / dpr;
+    for (var i = 0; i < particles.length; i++) {
+      var p = particles[i];
+      p.y -= p.speed;
+      p.x += Math.sin(p.phase + Date.now() * 0.0005) * 0.15; // slight drift
+      // Respawn when out of top
+      if (p.y < -5) {
+        var np = createParticle(true);
+        p.x = np.x;
+        p.y = h + 5;
+        p.size = np.size;
+        p.speed = np.speed;
+        p.opacity = np.opacity;
+        p.color = np.color;
+        p.phase = np.phase;
+      }
+    }
+  }
+
+  function drawParticles() {
+    ctx.clearRect(0, 0, w, h);
+    for (var i = 0; i < particles.length; i++) {
+      var p = particles[i];
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+      ctx.fillStyle = p.color;
+      ctx.globalAlpha = p.opacity;
+      ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  /* ---- Animation loop ---- */
+  var running = true;
+
+  function loop() {
+    if (!running) return;
+    updateParticles();
+    drawParticles();
+    requestAnimationFrame(loop);
+  }
+
+  /* ---- Page Visibility API ---- */
+  document.addEventListener('visibilitychange', function() {
+    if (document.hidden) {
+      running = false;
+    } else {
+      running = true;
+      loop();
+    }
+  });
+
+  /* ---- Start ---- */
+  loop();
+
+  /* Mark canvas as loaded (triggers CSS fade-in) */
+  canvas.classList.add('loaded');
+
+  /* ==========================================
+   * SCROLL PARALLAX
+   * ========================================== */
+  var hero = document.querySelector('.hero');
+  if (!hero) return;
+
+  var heroBadge = hero.querySelector('.hero-badge');
+  var heroLogo = hero.querySelector('.hero-logo-area') || hero.querySelector('h1');
+  var heroTagline = hero.querySelector('.hero-tagline');
+  var heroActions = hero.querySelector('.hero-actions');
+  var heroProof = hero.querySelector('.hero-proof');
+
+  // Collect elements that exist
+  var parallaxTargets = [];
+  function addTarget(el, startOffset, endOffset) {
+    if (el) parallaxTargets.push({ el: el, start: startOffset, end: endOffset, progress: 0 });
+  }
+
+  // badge fades 0-30%, tagline 10-50%, logo 20-100%, CTA 40-100%, proof 40-100%
+  addTarget(heroBadge, 0, 0.30);
+  addTarget(heroTagline, 0.10, 0.50);
+  addTarget(heroLogo, 0.20, 1.0);
+  addTarget(heroActions, 0.40, 1.0);
+  addTarget(heroProof, 0.40, 1.0);
+
+  var mm = window.matchMedia('(max-width: 767px)');
+  var rm = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  function scrollParallax() {
+    if (mm.matches || rm.matches) {
+      // Reset to default state
+      for (var i = 0; i < parallaxTargets.length; i++) {
+        var t = parallaxTargets[i];
+        t.el.style.opacity = '';
+        t.el.style.transform = '';
+      }
+      return;
+    }
+
+    var heroRect = hero.getBoundingClientRect();
+    var heroH = heroRect.height;
+    var scrollRange = heroH * 1.5;
+    var scrollProgress = Math.min(1, Math.max(0, (-heroRect.top) / scrollRange));
+
+    for (var i = 0; i < parallaxTargets.length; i++) {
+      var t = parallaxTargets[i];
+      var localProgress = (scrollProgress - t.start) / (t.end - t.start);
+      localProgress = Math.min(1, Math.max(0, localProgress));
+      // ease-out cubic
+      var eased = 1 - Math.pow(1 - localProgress, 2);
+      var opacity = 1 - eased;
+      var scale = t.el === heroLogo ? 1 - (eased * 0.10) : 1;
+      t.el.style.opacity = Math.max(0, opacity);
+      t.el.style.transform = scale !== 1 ? 'scale(' + scale + ')' : '';
+    }
+  }
+
+  /* ---- Scroll listener with RAF ---- */
+  var tickingP = false;
+  window.addEventListener('scroll', function() {
+    if (!tickingP) {
+      requestAnimationFrame(function() {
+        scrollParallax();
+        tickingP = false;
+      });
+      tickingP = true;
+    }
+  }, { passive: true });
+
+  /* Initial call */
+  scrollParallax();
+
+})();
