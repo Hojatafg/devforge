@@ -1,0 +1,65 @@
+{
+  "forgeguard_report": {
+    "name": "ForgeGuard QA — Dagens endringer",
+    "timestamp": "2026-06-17T20:24:57Z",
+    "commits": ["6a41344", "0b1cd6f", "694e5e5", "9f9341a", "50e7f32", "1941ce8"],
+    "deploy_url": "http://72.62.94.245/",
+    "pages_checked": 17,
+    "pages_passed": 17,
+    "features": {
+      "telegram_button": {
+        "status": "PASS",
+        "details": "64px, left:24px, pop-in + wiggle animation, 8 ikoner"
+      },
+      "orbital_icons": {
+        "status": "PASS",
+        "details": "8 icons orbiting hero logo via orbit-spin keyframes"
+      },
+      "language_selector": {
+        "status": "PASS",
+        "details": "Text-only dropdown, no flags, EN/NO options"
+      },
+      "team_section": {
+        "status": "PASS",
+        "details": "Hajo + Yusuf på about.html med SVG-avatarer"
+      },
+      "estimator": {
+        "status": "PASS",
+        "details": "New design: estimator-label, est-gradient, white budget, slider-fill, btn-estimate, REAL pricing"
+      },
+      "johnnys_pizza_removed": {
+        "status": "PASS",
+        "details": "0 references in portfolio.html (meta + content cleaned)"
+      },
+      "new_logo_nav": {
+        "status": "PASS",
+        "details": "16/16 pages use concept-3-final.webp, old devforge-logo.png removed from all HTML"
+      },
+      "hero_logo": {
+        "status": "PASS",
+        "details": "Uses concept-3-final.webp + .png fallback"
+      }
+    },
+    "blocking_issues": [
+      {
+        "id": "NETLIFY_URLS_BLOCKED",
+        "severity": "blocking",
+        "status": "BLOCKED_BY_DOMAIN",
+        "description": "All canonical/OG/hreflang/schema/sitemap peker til devforgelab.netlify.app. Kan ikke fikses før devforgelab.eu er aktivt.",
+        "note": "Domain pending activation — Domeneshop. Migreringsscript: migrate-domain.py"
+      }
+    ],
+    "warnings": [
+      {
+        "id": "SVG_ICONS_NOT_DONE",
+        "severity": "warning",
+        "description": "Emojis (🤝✨🚀) på about.html values-seksjon er ikke byttet til SVG-ikoner ennå"
+      }
+    ],
+    "known_limitations": [
+      "Netlify credits oppbrukt — deploy kun til VPS",
+      "Domain devforgelab.eu pending hos Domeneshop",
+      "ForgeGuard SEO-audit venter på domene"
+    ]
+  }
+}
