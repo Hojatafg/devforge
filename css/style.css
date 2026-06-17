@@ -297,17 +297,20 @@ ul {
   }
 }
 
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
 .footer-logo-img {
-  height: 40px;
+  height: 44px;
   width: auto;
   display: block;
 }
 
 .nav-logo-icon {
   width: 36px;
-  height: 36px;
-  background: var(--gradient-1);
-  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
