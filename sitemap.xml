@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- HOVEDSIDER -->
   <url>
     <loc>https://devforgelab.netlify.app/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://devforgelab.netlify.app/"/>
     <xhtml:link rel="alternate" hreflang="no" href="https://devforgelab.netlify.app/index-no.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://devforgelab.netlify.app/"/>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,68 +16,142 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://devforgelab.netlify.app/"/>
     <xhtml:link rel="alternate" hreflang="no" href="https://devforgelab.netlify.app/index-no.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://devforgelab.netlify.app/"/>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- TJENESTER -->
   <url>
     <loc>https://devforgelab.netlify.app/services.html</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://devforgelab.netlify.app/services-no.html</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- PORTEFØLJE -->
   <url>
     <loc>https://devforgelab.netlify.app/portfolio.html</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://devforgelab.netlify.app/blog.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://devforgelab.netlify.app/blog/website-cost-norway-2026.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://devforgelab.netlify.app/blog/signs-need-new-website.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://devforgelab.netlify.app/blog/website-vs-social-media.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
+
+  <!-- OM OSS -->
   <url>
     <loc>https://devforgelab.netlify.app/about.html</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- KONTAKT -->
   <url>
     <loc>https://devforgelab.netlify.app/contact.html</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://devforgelab.netlify.app/contact-no.html</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+
+  <!-- BLOGG -->
+  <url>
+    <loc>https://devforgelab.netlify.app/blog.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devforgelab.netlify.app/blog/website-cost-norway-2026.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://devforgelab.netlify.app/blog/signs-need-new-website.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://devforgelab.netlify.app/blog/website-vs-social-media.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://devforgelab.netlify.app/blog/nettside-kostnad-norge-2026.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- JURIDISKE SIDER (NYE) -->
+  <url>
+    <loc>https://devforgelab.netlify.app/privacy.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://devforgelab.netlify.app/personvern.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://devforgelab.netlify.app/terms.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://devforgelab.netlify.app/vilkar.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- DEVFORGE PET PORTRAITS -->
+  <url>
+    <loc>https://devforgelab.netlify.app/pet-portraits/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devforgelab.netlify.app/pet-portraits/bestill.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://devforgelab.netlify.app/pet-portraits/galleri.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://devforgelab.netlify.app/pet-portraits/faq.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://devforgelab.netlify.app/pet-portraits/takk.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.1</priority>
   </url>
 </urlset>
