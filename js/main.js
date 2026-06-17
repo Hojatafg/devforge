@@ -106,6 +106,28 @@
     });
   }
 
+  /* ===== SCROLL REVEAL (sections) ===== */
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -80px 0px', threshold: 0.1 });
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', observeReveal);
+  } else {
+    observeReveal();
+  }
+
+  function observeReveal() {
+    document.querySelectorAll('.section-reveal, .stagger-grid').forEach(el => {
+      revealObserver.observe(el);
+    });
+  }
+
   /* ===== FAQ ACCORDION ===== */
   document.querySelectorAll('.faq-question').forEach(button => {
     button.addEventListener('click', () => {
@@ -240,6 +262,37 @@
   banner.appendChild(text);
   banner.appendChild(btnDiv);
   document.body.appendChild(banner);
+})();
+
+/* ===== LANGUAGE SWITCHER DROPDOWN ===== */
+(function() {
+  'use strict';
+  var btn = document.getElementById('langBtn');
+  var dropdown = document.getElementById('langDropdown');
+  if (!btn || !dropdown) return;
+
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    var isOpen = dropdown.classList.toggle('open');
+    btn.setAttribute('aria-expanded', isOpen);
+  });
+
+  document.addEventListener('click', function() {
+    dropdown.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+  });
+
+  dropdown.addEventListener('click', function(e) {
+    e.stopPropagation();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && dropdown.classList.contains('open')) {
+      dropdown.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.focus();
+    }
+  });
 })();
 
 /* ==========================================

@@ -79,8 +79,25 @@
         <a href="portfolio.html">Portfolio</a>
         <a href="blog.html">Blog</a>
         <a href="about.html">About</a>
+        <a href="estimator.html">Estimator</a>
         <a href="contact.html" class="nav-cta">Contact</a>
-        <a href="index-no.html" class="nav-lang" aria-label="Norsk">NO</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" id="langBtn" aria-expanded="false" aria-label="Choose language">
+            <svg viewBox="0 0 24 18" aria-hidden="true"><rect width="24" height="6" fill="#012169"/><rect y="6" width="24" height="6" fill="#fff"/><rect y="12" width="24" height="6" fill="#012169"/><rect x="9" width="6" height="18" fill="#fff"/><rect x="0" y="7" width="24" height="4" fill="#C8102E"/><rect x="11" y="0" width="2" height="18" fill="#C8102E"/></svg>
+            <span>EN</span>
+            <svg class="lang-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="index.html" class="active">
+              <svg viewBox="0 0 24 18" aria-hidden="true"><rect width="24" height="6" fill="#012169"/><rect y="6" width="24" height="6" fill="#fff"/><rect y="12" width="24" height="6" fill="#012169"/><rect x="9" width="6" height="18" fill="#fff"/><rect x="0" y="7" width="24" height="4" fill="#C8102E"/><rect x="11" y="0" width="2" height="18" fill="#C8102E"/></svg>
+              English
+            </a>
+            <a href="index-no.html">
+              <svg viewBox="0 0 24 18" aria-hidden="true"><rect width="24" height="18" fill="#ef2b2d"/><rect x="6" width="4" height="18" fill="#fff"/><rect y="7" width="24" height="4" fill="#fff"/><rect x="7" width="2" height="18" fill="#002868"/><rect y="8" width="24" height="2" fill="#002868"/></svg>
+              Norsk
+            </a>
+          </div>
+        </div>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
         <span></span>
@@ -144,7 +161,7 @@
         <h2 class="section-title">What we can do for you</h2>
         <p class="section-subtitle">Tailored web solutions for your business — from idea to finished product.</p>
       </div>
-      <div class="services-grid">
+      <div class="services-grid stagger-grid">
         <div class="service-card fade-in">
           <div class="service-icon"><!-- icon --><!-- icon --><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="url(#icon-grad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
           <h3>Websites & Landing Pages</h3>
@@ -180,14 +197,14 @@
   </section>
 
   <!-- ===== WHY CHOOSE US ===== -->
-  <section class="section" id="why-us">
+  <section class="section section-reveal" id="why-us">
     <div class="container">
       <div class="section-header fade-in">
         <span class="section-tag">Why Choose Us</span>
         <h2 class="section-title">What sets us apart</h2>
         <p class="section-subtitle">We're a new team with big ambitions — here's what you can expect when working with us.</p>
       </div>
-      <div class="services-grid">
+      <div class="services-grid stagger-grid">
         <div class="service-card fade-in">
           <div class="service-icon"><!-- icon --><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="url(#icon-grad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
           <h3>Modern Tech Stack</h3>
@@ -263,7 +280,7 @@
   </section>
 
   <!-- ===== LATEST FROM THE BLOG ===== -->
-  <section class="section">
+  <section class="section section-reveal">
     <div class="container">
       <div class="section-header fade-in">
         <span class="section-tag">Insights</span>
@@ -366,6 +383,14 @@
       </div>
     </div>
   </footer>
+
+  <!-- ===== TELEGRAM FLOATING BUTTON ===== -->
+  <a href="https://t.me/hajo101378" target="_blank" rel="noopener noreferrer"
+     class="telegram-btn" aria-label="Kontakt oss på Telegram">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21.5 2L1 10.5l7.5 3.5L15 7l-4 7 8 6L21.5 2z"/>
+    </svg>
+  </a>
 
   <script defer src="js/main.js"></script>
 </body>

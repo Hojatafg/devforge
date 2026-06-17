@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== PRIMARY META ===== -->
+  <title>Project Estimator – Web Development Costs | DevForge</title>
+  <meta name="description" content="Get an instant estimate for your web development project. Choose your platform, scale, and features to see a transparent price range from DevForge.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="DevForge">
+
+  <!-- ===== CANONICAL ===== -->
+  <link rel="canonical" href="https://devforgelab.netlify.app/estimator.html">
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="DevForge">
+  <meta property="og:title" content="Project Estimator – Web Development Costs | DevForge">
+  <meta property="og:description" content="Get an instant estimate for your web development project. Transparent pricing, no hidden fees.">
+  <meta property="og:url" content="https://devforgelab.netlify.app/estimator.html">
+  <meta property="og:image" content="https://devforgelab.netlify.app/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- ===== TWITTER CARDS ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Project Estimator – Web Development Costs | DevForge">
+  <meta name="twitter:description" content="Get an instant estimate for your web development project.">
+
+  <!-- ===== STYLES ===== -->
+  <link rel="stylesheet" href="fonts/inter.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- ===== FAVICON ===== -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/devforge-icon-192.png">
+  <link rel="apple-touch-icon" href="images/devforge-icon-192.png">
+
+  <!-- ===== CONFIG + STRUCTURED DATA ===== -->
+  <script defer src="js/config.js"></script>
+  <script defer src="js/structured-data.js"></script>
+
+  <!-- ===== HREFLANG ===== -->
+  <link rel="alternate" hreflang="en" href="https://devforgelab.netlify.app/estimator.html">
+  <link rel="alternate" hreflang="x-default" href="https://devforgelab.netlify.app/estimator.html">
+</head>
+<body>
+
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;">
+  <defs>
+    <linearGradient id="icon-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+  <!-- ===== SKIP TO CONTENT ===== -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="DevForge home">
+        <img src="images/devforge-logo.png" alt="DevForge" class="nav-logo-img" width="120" height="70">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="estimator.html" aria-current="page">Estimator</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+        <a href="index-no.html" class="nav-lang" aria-label="Norsk">NO</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="section section-hero" id="main-content">
+    <div class="container">
+      <div class="section-header fade-in" style="text-align:left;max-width:100%;">
+        <span class="section-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:middle;margin-right:6px;"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="9" y1="6" x2="15" y2="6"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="13" y2="14"/></svg>
+          Project Estimator
+        </span>
+        <h1 class="section-title" style="font-size:2.5rem;">Calculate Your <span class="gradient-text">Investment</span></h1>
+        <p class="section-subtitle" style="max-width:600px;">Get a rough estimate of what it takes to build your vision with enterprise-grade quality.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ESTIMATOR ===== -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="estimator-wrapper section-reveal">
+        <!-- Left: Form -->
+        <div class="estimator-form">
+          <!-- Platform -->
+          <h3>Target Platform</h3>
+          <div class="platform-group" id="platformGroup">
+            <button class="platform-btn active" data-value="web" aria-pressed="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Web
+            </button>
+            <button class="platform-btn" data-value="mobile" aria-pressed="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>
+              Mobile
+            </button>
+            <button class="platform-btn" data-value="both" aria-pressed="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              Both
+            </button>
+          </div>
+
+          <!-- Scale -->
+          <h3>Scale &amp; Polish</h3>
+          <div class="scale-slider">
+            <input type="range" id="scaleSlider" min="0" max="2" step="1" value="1">
+            <div class="scale-labels">
+              <span id="scaleLabel0">MVP (Startup)</span>
+              <span id="scaleLabel1" class="active-label">Growth (Scale-up)</span>
+              <span id="scaleLabel2">Enterprise (Global)</span>
+            </div>
+          </div>
+
+          <!-- Features -->
+          <h3>Core Features</h3>
+          <div class="features-grid" id="featuresGrid">
+            <button class="feature-btn active" data-value="auth" aria-pressed="true">User Auth &amp; Profiles</button>
+            <button class="feature-btn" data-value="payments" aria-pressed="false">Payments (Stripe)</button>
+            <button class="feature-btn" data-value="ai" aria-pressed="false">AI Integration</button>
+            <button class="feature-btn" data-value="cms" aria-pressed="false">CMS / Admin Panel</button>
+          </div>
+
+          <!-- Fallback for no-JS -->
+          <noscript>
+            <div style="padding:20px;background:var(--bg-card);border-radius:var(--radius-md);text-align:center;border:1px solid var(--border-color);">
+              <p style="color:var(--text-muted);">Enable JavaScript to use the estimator, or <a href="contact.html" style="color:var(--primary-light);">contact us directly</a> for a custom quote.</p>
+            </div>
+          </noscript>
+        </div>
+
+        <!-- Right: Result -->
+        <div class="estimator-result" id="estimatorResult">
+          <div class="result-budget-label">Estimated Budget</div>
+          <div class="result-budget" id="resultBudget">$3,000</div>
+          <div class="result-budget-sub" id="resultNote">Starting at this range</div>
+
+          <div class="result-detail">
+            <span>Timeline Estimate</span>
+            <span id="resultTimeline">2-3 Months</span>
+          </div>
+          <div class="result-detail">
+            <span>Team Size</span>
+            <span id="resultTeam">4 Engineers</span>
+          </div>
+          <div class="result-detail">
+            <span>Support</span>
+            <span id="resultSupport">3 Months Priority</span>
+          </div>
+
+          <div class="result-cta">
+            <a href="contact.html" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+              Lock in this Quote
+            </a>
+          </div>
+          <div class="result-disclaimer">* Estimates are non-binding and subject to final technical review.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="images/devforge-logo.png" alt="DevForge" class="footer-logo-img" width="120" height="70">
+          </a>
+          <p>Modern websites, systems and digital launches.</p>
+          <p class="footer-contact"><strong>Telegram:</strong> <a href="https://t.me/hajo101378" target="_blank" rel="noopener noreferrer">@hajo101378</a></p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="services.html">Websites</a>
+            <a href="services.html">E-Commerce</a>
+            <a href="services.html">Web Apps</a>
+            <a href="services.html">SEO</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="estimator.html">Estimator</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4>Legal</h4>
+          <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 DevForge. All rights reserved. Based in Norway.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://t.me/hajo101378" target="_blank" rel="noopener noreferrer"
+     class="telegram-btn" aria-label="Kontakt oss på Telegram">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21.5 2L1 10.5l7.5 3.5L15 7l-4 7 8 6L21.5 2z"/>
+    </svg>
+  </a>
+
+  <script defer src="js/config.js"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/estimator.js"></script>
+</body>
+</html>
