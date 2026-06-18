@@ -13,13 +13,13 @@ DevForge is a web development agency based in Norway. We build modern websites, 
 - Maintenance & Support: Ongoing updates from $250/mo
 
 # Pages
-- Home: https://devforgelab.netlify.app/
-- Services: https://devforgelab.netlify.app/services.html
-- About: https://devforgelab.netlify.app/about.html
-- Contact: https://devforgelab.netlify.app/contact.html
+- Home: https://devforgelab.eu/
+- Services: https://devforgelab.eu/services.html
+- About: https://devforgelab.eu/about.html
+- Contact: https://devforgelab.eu/contact.html
 
 # Location
 Norway
 
 # Contact
-Use the contact form at https://devforgelab.netlify.app/contact.html
+Use the contact form at https://devforgelab.eu/contact.html

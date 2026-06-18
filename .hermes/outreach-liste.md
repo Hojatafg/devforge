@@ -36,5 +36,5 @@ Har du 5 minutter til en uformell prat? Jeg kan lage et gratis forslag.
 
 Mvh,
 Hajo
-DevForge — devforgelab.netlify.app
+DevForge — devforgelab.eu
 📱 Telegram: @hajo101378

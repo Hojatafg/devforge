@@ -25,7 +25,7 @@ import re
 import sys
 
 # === CONFIG — Change these ===
-OLD_DOMAIN = 'devforgelab.netlify.app'
+OLD_DOMAIN = 'devforgelab.eu'
 NEW_DOMAIN = 'devforgelab.eu'
 SITE_DIR = os.path.dirname(os.path.abspath(__file__))  # ~/webdev-site/
 

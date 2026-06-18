@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-06-18T10:48:19Z",
-  "note": "Downloaded from Unsplash and cropped/graded to 600x400 PNG for DevForge cards. No AI images generated.",
+  "note": "Contains downloaded Unsplash assets plus one DevForge-owned generated service image for visual consistency.",
   "assets": [
     {
       "filename": "blog-website-cost-norway.png",
@@ -54,13 +54,14 @@
       "mode": "RGB",
       "section": "Services",
       "card": "Responsive & Accessible",
-      "alt": "Laptop with refreshable braille display representing accessible web design",
-      "creator": "Elizabeth Woolner",
-      "source_title": "Laptop computer with refreshable braille display",
-      "source_page": "https://unsplash.com/photos/a-laptop-computer-sitting-on-top-of-a-desk-9xxNZCJZ8bA",
-      "source_url": "https://images.unsplash.com/photo-1634947096506-6d9f114cf64e?auto=format&fit=crop&w=1200&h=800&q=85",
-      "license": "Unsplash License",
-      "license_url": "https://unsplash.com/license"
+      "alt": "Responsive and accessible website design by DevForge",
+      "creator": "Codex for DevForge",
+      "source_title": "DevForge responsive accessibility product card",
+      "source_page": "local generated asset",
+      "source_url": "local generated asset",
+      "license": "DevForge owned/generated asset",
+      "license_url": "",
+      "note": "Replaced the Unsplash photo with a DevForge-branded vector-style PNG to match the other service product images."
     },
     {
       "filename": "value-modern-tech-stack.png",
@@ -182,5 +183,6 @@
       "license": "Unsplash License",
       "license_url": "https://unsplash.com/license"
     }
-  ]
+  ],
+  "updated_at": "2026-06-18T11:31:27Z"
 }

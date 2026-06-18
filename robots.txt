@@ -33,4 +33,4 @@ Disallow: /404.html
 Crawl-delay: 10
 
 # === Sitemaps ===
-Sitemap: https://devforgelab.netlify.app/sitemap.xml
+Sitemap: https://devforgelab.eu/sitemap.xml

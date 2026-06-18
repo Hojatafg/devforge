@@ -16,14 +16,14 @@
 
 ## Oppsummering
 
-ForgeGuard har gjennomgått 23 sider live på VPS. **0 av 23 innholdssider består fullt ut.** Hovedårsaken er at alle canonical, og hreflang peker til Netlify (devforgelab.netlify.app) i stedet for VPS-produksjonen. Dette må løses før videre Codex-review.
+ForgeGuard har gjennomgått 23 sider live på VPS. **0 av 23 innholdssider består fullt ut.** Hovedårsaken er at alle canonical, og hreflang peker til Netlify (devforgelab.eu) i stedet for VPS-produksjonen. Dette må løses før videre Codex-review.
 
 ---
 
 ## 🚫 Blocking Issues
 
 ### B1 — Canonical peker til Netlify (19 sider)
-Hver eneste hovedside har `<link rel="canonical" href="https://devforgelab.netlify.app/...">`. Dette forteller Google at Netlify-URL-en er den autoritative versjonen, ikke VPS-en.
+Hver eneste hovedside har `<link rel="canonical" href="https://devforgelab.eu/...">`. Dette forteller Google at Netlify-URL-en er den autoritative versjonen, ikke VPS-en.
 
 **Påvirket:** `/`, `/index-no.html`, `/services.html`, `/services-no.html`, `/portfolio.html`, `/about.html`, `/contact.html`, `/contact-no.html`, `/blog.html`, 4 bloggposter, `/privacy.html`, `/personvern.html`, `/terms.html`, `/vilkar.html`
 
@@ -31,17 +31,17 @@ Hver eneste hovedside har `<link rel="canonical" href="https://devforgelab.netli
 Samme problem som canonical — alle Open Graph-URL-er bruker Netlify-domene.
 
 ### B3 — Hreflang peker til Netlify (14 sider)
-Alle språk-alternater bruker `devforgelab.netlify.app`.
+Alle språk-alternater bruker `devforgelab.eu`.
 
 ### B4 — Sitemap.xml bruker Netlify-URL-er
-Alle 22 oppføringer i sitemap.xml lister `https://devforgelab.netlify.app/...`
+Alle 22 oppføringer i sitemap.xml lister `https://devforgelab.eu/...`
 
 ### B5 — Robots.txt peker til Netlify-sitemap
-`Sitemap: https://devforgelab.netlify.app/sitemap.xml`
+`Sitemap: https://devforgelab.eu/sitemap.xml`
 
 ### B6 — structured-data.js hardkoder Netlify BASE_URL
 ```js
-const BASE_URL = 'https://devforgelab.netlify.app';
+const BASE_URL = 'https://devforgelab.eu';
 ```
 Dette påvirker Organization, WebSite, Service, BreadcrumbList og FAQ-schemas.
 
@@ -103,7 +103,7 @@ Ingen `og:title`, `og:description`, `og:url`, `og:image` eller `twitter:card` p�
 
 ## Kjente begrensninger
 
-1. **Netlify credits er oppbrukt** — kan ikke deployere til devforgelab.netlify.app. VPS (72.62.94.245) er midlertidig produksjon til domene/Netlify er løst.
+1. **Netlify credits er oppbrukt** — kan ikke deployere til devforgelab.eu. VPS (72.62.94.245) er midlertidig produksjon til domene/Netlify er løst.
 2. **JSON-LD er JS-injisert** — curl ser det ikke, men Google kan tolke det. Bør flyttes til inline HTML for sikkerhets skyld.
 3. **Samme OG-bilde for alle sider** — og-image.png (1200×630) brukes overalt. Ikke kritisk, men svekker social sharing.
 

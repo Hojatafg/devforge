@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://devforgelab.netlify.app/pet-portraits/</loc>
+    <loc>https://devforgelab.eu/pet-portraits/</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://devforgelab.netlify.app/pet-portraits/galleri.html</loc>
+    <loc>https://devforgelab.eu/pet-portraits/galleri.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devforgelab.netlify.app/pet-portraits/bestill.html</loc>
+    <loc>https://devforgelab.eu/pet-portraits/bestill.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://devforgelab.netlify.app/pet-portraits/faq.html</loc>
+    <loc>https://devforgelab.eu/pet-portraits/faq.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://devforgelab.netlify.app/pet-portraits/takk.html</loc>
+    <loc>https://devforgelab.eu/pet-portraits/takk.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>never</changefreq>
     <priority>0.1</priority>

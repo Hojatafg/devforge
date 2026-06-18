@@ -9,7 +9,7 @@
 
   /* Read base URL from central config, with fallback */
   var cfg = window.DEVFORGE_CONFIG || {};
-  var BASE_URL = cfg.SITE_URL || 'https://devforgelab.netlify.app';
+  var BASE_URL = cfg.SITE_URL || 'https://devforgelab.eu';
   var SITE_NAME = cfg.SITE_NAME || 'DevForge';
 
   /* ---------- Organization + LocalBusiness ---------- */

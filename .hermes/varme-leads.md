@@ -26,6 +26,6 @@ Eier: Kjenner Hajo personlig
 >
 > Vi har laget et demokonsept for en restaurantnettside som jeg gjerne skulle vist dere. Kanskje det kan være noe for Lille Italia også?
 >
-> Sjekk gjerne hva vi driver med: devforgelab.netlify.app/portfolio
+> Sjekk gjerne hva vi driver med: devforgelab.eu/portfolio
 >
 > Mvh, Hajo 🤝

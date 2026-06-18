@@ -1,7 +1,7 @@
 # DevForge Pet Portraits — Handlingsplan: Første salg denne uka
 
 ## ✅ Allerede gjort
-- [x] Nettsiden er LIVE: https://devforgelab.netlify.app/pet-portraits/
+- [x] Nettsiden er LIVE: https://devforgelab.eu/pet-portraits/
 - [x] 9 portretter generert i 3 stiler
 - [x] Bestillingsside med validering
 - [x] Netlify Functions klare (mangler nøkler)
@@ -34,7 +34,7 @@ Se nedenfor – jeg har skrevet klare tekster.
 Forvandle din hund eller katt til et kongelig renessansemesterverk 👑✨
 Helt ekte AI-genererte portretter – fra 249 kr.
 
-👉 https://devforgelab.netlify.app/pet-portraits/
+👉 https://devforgelab.eu/pet-portraits/
 
 🎁 Tips: Perfekt gave til dyreeiere! Bestill i dag, få forhåndsvisning innen 24 timer.
 

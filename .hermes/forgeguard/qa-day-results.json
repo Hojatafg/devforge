@@ -45,7 +45,7 @@
         "id": "NETLIFY_URLS_BLOCKED",
         "severity": "blocking",
         "status": "BLOCKED_BY_DOMAIN",
-        "description": "All canonical/OG/hreflang/schema/sitemap peker til devforgelab.netlify.app. Kan ikke fikses før devforgelab.eu er aktivt.",
+        "description": "All canonical/OG/hreflang/schema/sitemap peker til devforgelab.eu. Kan ikke fikses før devforgelab.eu er aktivt.",
         "note": "Domain pending activation — Domeneshop. Migreringsscript: migrate-domain.py"
       }
     ],

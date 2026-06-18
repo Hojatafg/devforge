@@ -9,7 +9,7 @@
 
   window.DEVFORGE_CONFIG = {
     /* ---- Change this when domain is ready ---- */
-    SITE_URL: 'https://devforgelab.netlify.app',
+    SITE_URL: 'https://devforgelab.eu',
 
     /* ---- Derived URLs (computed automatically) ---- */
     get BASE_URL()   { return this.SITE_URL; },

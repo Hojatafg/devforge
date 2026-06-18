@@ -36,8 +36,8 @@ exports.handler = async (event) => {
         },
         quantity: 1,
       }],
-      success_url: 'https://devforgelab.netlify.app/pet-portraits/takk.html',
-      cancel_url: 'https://devforgelab.netlify.app/pet-portraits/bestill.html',
+      success_url: 'https://devforgelab.eu/pet-portraits/takk.html',
+      cancel_url: 'https://devforgelab.eu/pet-portraits/bestill.html',
       metadata: { product, pet_name: petName || '', custom_text: customText || '' }
     });
 

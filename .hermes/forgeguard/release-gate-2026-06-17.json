@@ -97,7 +97,7 @@
         "id": "NETLIFY_URLS_IN_SITEMAP",
         "severity": "blocking",
         "status": "BLOCKED_BY_DOMAIN",
-        "description": "Sitemap.xml, robots.txt, canonical, OG, hreflang og JSON-LD bruker devforgelab.netlify.app. Kan ikke rettes før devforgelab.eu er aktivt.",
+        "description": "Sitemap.xml, robots.txt, canonical, OG, hreflang og JSON-LD bruker devforgelab.eu. Kan ikke rettes før devforgelab.eu er aktivt.",
         "resolution": "Kjør migrate-domain.py når domenet er aktivt. Domain Readiness Checklist ligger i .hermes/forgeguard/domain-readiness-checklist.md"
       }
     ],

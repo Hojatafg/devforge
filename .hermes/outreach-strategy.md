@@ -50,13 +50,13 @@ Fokus på lokale bedrifter i Fredrikstad-området som mest sannsynlig trenger ne
 
 Jeg så at [restaurant] leverer på Foodora/Wolt, men mangler egen nettside. Vi hjalp nettopp Johnny's Pizza på Lisleby med en nettside som gir kundene mulighet til å se meny og bestille direkte — utenom Foodora.
 
-Her er siden: devforgelab.netlify.app/projects/johnnys-pizza
+Her er siden: devforgelab.eu/projects/johnnys-pizza
 
 Har du 5 minutter til en prat om hva en nettside kan bety for dere?
 
 Mvh,
 Hajo
-DevForge — devforgelab.netlify.app
+DevForge — devforgelab.eu
 
 ### Mal 2: Lokalbutikk / Tjenesteyter
 
@@ -68,7 +68,7 @@ Jeg driver DevForge — et webutviklingsbyrå basert i Fredrikstad. Vi bygger mo
 
 Jeg sjekket [butikk] sin nettside og tenkte at vi kanskje kunne gjøre noe som passer bedre for dere. Fra $1,500 får dere en responsiv, SEO-vennlig side.
 
-Har du lyst til å se noen eksempler? Vi har nettopp lansert portfolioen vår: devforgelab.netlify.app/portfolio
+Har du lyst til å se noen eksempler? Vi har nettopp lansert portfolioen vår: devforgelab.eu/portfolio
 
 Mvh,
 Hajo

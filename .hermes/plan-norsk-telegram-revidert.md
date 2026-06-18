@@ -20,9 +20,9 @@
 
 ### 4. hreflang tags i <head>
 ```html
-<link rel="alternate" hreflang="en" href="https://devforgelab.netlify.app/index.html">
-<link rel="alternate" hreflang="no" href="https://devforgelab.netlify.app/index-no.html">
-<link rel="alternate" hreflang="x-default" href="https://devforgelab.netlify.app/index.html">
+<link rel="alternate" hreflang="en" href="https://devforgelab.eu/index.html">
+<link rel="alternate" hreflang="no" href="https://devforgelab.eu/index-no.html">
+<link rel="alternate" hreflang="x-default" href="https://devforgelab.eu/index.html">
 ```
 
 ### 5. Footer Connect-seksjon

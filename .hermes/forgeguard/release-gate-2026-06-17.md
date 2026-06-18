@@ -87,7 +87,7 @@
 | config.js | ✅ HTTP 200, SITE_URL sentralisert |
 | structured-data.js | ✅ Leser fra config, ikke hardkodet |
 | migrate-domain.py | ✅ Klar, dokumentert |
-| Netlify-URL-er i sitemap | 🔴 **BLOCKED_BY_DOMAIN** — 28 referanser (devforgelab.netlify.app) |
+| Netlify-URL-er i sitemap | 🔴 **BLOCKED_BY_DOMAIN** — 28 referanser (devforgelab.eu) |
 
 ---
 
@@ -95,7 +95,7 @@
 
 | ID | Status | Beskrivelse |
 |----|--------|-------------|
-| NETLIFY_URLS | 🔴 **BLOCKED_BY_DOMAIN** | Sitemap, canonical, OG, hreflang, JSON-LD bruker devforgelab.netlify.app. Løsning: kjør `migrate-domain.py` når devforgelab.eu er aktivt. Domain Readiness Checklist: `.hermes/forgeguard/domain-readiness-checklist.md` |
+| NETLIFY_URLS | 🔴 **BLOCKED_BY_DOMAIN** | Sitemap, canonical, OG, hreflang, JSON-LD bruker devforgelab.eu. Løsning: kjør `migrate-domain.py` når devforgelab.eu er aktivt. Domain Readiness Checklist: `.hermes/forgeguard/domain-readiness-checklist.md` |
 
 ## Warnings
 

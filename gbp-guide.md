@@ -1,37 +1,27 @@
 # Google Business Profile — DevForge
-## Klar til å kopiere inn
+## Ferdig utfylt, klar til å kopiere inn
 
 ---
 
-### 🔑 Steg 1: Logg inn
-Gå til https://business.google.com/ og logg inn med **hojat10@icloud.com** (eller din personlige Google-konto).
-
-### ➕ Steg 2: Opprett ny profil
-Klikk **"Add your business"** → **"Add a business"**
+### 🔑 Logg inn
+Gå til https://business.google.com/ og logg inn med Google-kontoen din.
 
 ---
 
-### 📋 Ferdig utfylt innhold — bare kopier inn
+### 📋 Ferdig utfylt innhold
 
 | Felt | Verdi |
 |------|-------|
 | **Business name** | `DevForge` |
-| **Category** | `Web designer` (primær) + `Website designer`, `Internet marketing service` (sekundære) |
-| **Phone** | (din telefon — valgfritt, kan skjules) |
-| **Website** | `https://devforgelab.netlify.app` |
-| **Service area** | ⚠️ Viktig: Siden DevForge ikke har fysisk kontor/besøksadresse, velg **"Service area business"** og angi: `Fredrikstad`, `Oslo`, `Sarpsborg`, `Moss` |
-| **Business description** | (se nedenfor) |
-| **Hours** | (se nedenfor) |
-
----
+| **Category** | `Web designer` (primær) + `Website designer`, `Internet marketing service` |
+| **Website** | `https://devforgelab.eu` |
+| **Service area** | Velg **"Service area business"** → `Fredrikstad`, `Oslo`, `Sarpsborg`, `Moss` |
 
 ### 📝 Beskrivelse — kopier dette:
 
 > DevForge is a modern web development agency based in Norway. We build custom websites, e-commerce stores, and web applications for businesses that want a professional online presence. Whether you need a simple landing page or a full-featured web application, we deliver high-quality, responsive, and SEO-optimized solutions. We believe in clear communication, transparent pricing, and delivering work we're proud to put our name on.
 
----
-
-### 🕐 Åpningstider (anbefalt)
+### 🕐 Åpningstider
 
 | Dag | Tid |
 |-----|-----|
@@ -39,58 +29,15 @@ Klikk **"Add your business"** → **"Add a business"**
 | Lørdag | 10:00–14:00 |
 | Søndag | Stengt |
 
----
-
 ### 🖼️ Bilder som bør lastes opp
 
-| Bilde | Hva |
-|------|-----|
-| **Profilbilde (logo)** | `<DevForge-logo>` — 1200×1200px |
-| **Forsidebilde** | `https://devforgelab.netlify.app/images/og-image.svg` — 1200×630px |
-| **Team** | Gruppenbilde / portrett (om dere har) |
-| **Arbeidsbilder** | Skjermbilder av prosjekter (Johnny's Pizza, egen nettside) |
+| Bilde | Hvor finner jeg det |
+|-------|---------------------|
+| **Profilbilde (logo)** | `images/Logoer/devforge-concept-3-final.webp` — den nye 3D-logoen med lyn |
+| **Forsidebilde** | `images/og-image.png` — 1200×630px |
+| **Arbeidsbilder** | Skjermbilder av nettsiden din (devforgelab.eu) |
 
----
-
-### ✅ Steg 3: Verifisering
-
-Google tilbyr flere verifiseringsmetoder:
-
-| Metode | Beskrivelse |
-|--------|-------------|
-| **Video** | 📹 Anbefalt for servicebransjer — film kort video som viser arbeidsmiljøet ditt |
-| **Telefon** | 🤙 Få en SMS-kode — raskest |
-| **E-post** | 📧 Få kode på e-post |
-| **Postkort** | 📬 Tar 1-2 uker — siste utvei |
-
-**Anbefalt:** Velg **Video** eller **Telefon** (raskest).
-
-#### Verifiseringsvideo (hvis du velger video):
-Film 20–30 sekunder som viser:
-1. 📍 **Bevis på lokasjon** — skjermbilde av Google Maps med ditt område
-2. 💻 **Arbeidsområde** — pulten, PC-en, kode editor
-3. 📋 **Navn på bedriften** — si "DevForge" eller vis på skjermen
-
----
-
-### 🚀 Steg 4: Etter verifisering — optimaliser
-
-Når profilen er verifisert, gjør DETTE med en gang:
-
-#### 1. Fyll ut ALT
-- [x] Business name
-- [x] Category (web designer + website designer)
-- [x] Description ✅ (kopiert over)
-- [x] Hours ✅ (kopiert over)
-- [x] Phone number
-- [x] Website ✅ (devforgelab.netlify.app)
-- [x] Service area
-- [x] Profile photo (logo)
-- [x] Cover photo
-- [x] Products/services (se neste seksjon)
-
-#### 2. Legg til tjenester (Products tab)
-Lag en liste med prisene fra nettsiden:
+### 📊 Tjenester (Products-tab)
 
 | Tjeneste | Pris |
 |----------|------|
@@ -100,8 +47,7 @@ Lag en liste med prisene fra nettsiden:
 | SEO & Performance | From $800 |
 | Maintenance & Support | From $250/mo |
 
-#### 3. Første innlegg (Post)
-Publiser 1-2 innlegg i uka. Her er ditt første:
+### 📝 Første innlegg — kopier dette:
 
 > 🚀 **We're open for business!**
 >
@@ -109,37 +55,16 @@ Publiser 1-2 innlegg i uka. Her er ditt første:
 >
 > ✅ Custom design ✅ Mobile-friendly ✅ SEO optimized ✅ Fixed pricing
 >
-> 👉 Get in touch: https://devforgelab.netlify.app/contact
+> 👉 Get in touch: https://devforgelab.eu/contact
 
-#### 4. Svar på anmeldelser
-Når du får dine første kunder, be dem legge igjen en Google-anmeldelse. Svar ALLE innen 24 timer.
+### 📈 Ukentlige GBP-oppgaver
 
----
-
-### 📊 Ukentlig GBP-oppgaver
-
-For å rangere høyt lokalt, gjør dette ukentlig:
-
-| Oppgave | Frekvens | Effekt |
-|---------|----------|--------|
-| Legg ut et innlegg | 1-2x/uke | Høy |
-| Svar på anmeldelser | Innen 24t | Høy |
-| Oppdater bilder | Månedlig | Medium |
-| Sjekk innsikt (Insights) | Ukentlig | Medium |
+| Oppgave | Frekvens |
+|---------|----------|
+| Legg ut et innlegg | 1-2x/uke |
+| Svar på anmeldelser | Innen 24t |
+| Sjekk innsikt (Insights) | Ukentlig |
 
 ---
 
-### 🔗 Nyttige lenker
-
-| Lenke | Formål |
-|-------|--------|
-| https://business.google.com/ | Din GBP-dashboard |
-| https://search.google.com/local/posts | Post-opplasting direkte |
-| https://developers.google.com/my-business/content | API for automatisering |
-
----
-
-Når du er klar, sier du **"Start GBP"** og jeg kan:
-1. Åpne business.google.com i nettleseren for deg
-2. Hjelpe med å fylle ut feltene
-3. Forberede flere innlegg
+Når du er logget inn, si **"Start GBP browser"** så kan jeg navigere deg gjennom stegene! 😊

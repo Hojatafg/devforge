@@ -3,3 +3,6 @@ package-lock.json
 package.json
 make-pptx.js
 *.pptx
+
+# Local Netlify folder
+.netlify
