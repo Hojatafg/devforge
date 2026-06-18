@@ -2664,6 +2664,18 @@ ul {
   display: block;
 }
 
+/* ===== BLOG CARD IMAGES ===== */
+.blog-card-img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(99, 102, 241, 0.18);
+  background: #0f172a;
+  margin-bottom: 20px;
+  display: block;
+}
+
 /* ===== MOBILE OVERRIDES ===== */
 @media (max-width: 768px) {
   .estimator-wrapper {
