@@ -43,8 +43,19 @@
 </head>
 <body>
 
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;">
+  <defs>
+    <linearGradient id="icon-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+  <!-- ===== SKIP TO CONTENT (Accessibility) ===== -->
   <a href="#main-content" class="skip-link">Hopp til hovedinnhold</a>
 
+  <!-- ===== NAVIGASJON ===== -->
   <nav class="nav" id="nav" role="navigation" aria-label="Hovedmeny">
     <div class="container">
       <a href="index-no.html" class="nav-logo" aria-label="DevForge hjem">
@@ -77,45 +88,64 @@
     </div>
   </nav>
 
+  <!-- ===== HERO ===== -->
   <section class="hero" id="main-content">
     <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <!-- Orbital icons -->
+    <div class="orbital-icons" aria-hidden="true">
+      <div class="orbit-icon orbit-icon-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="14" rx="2"/><line x1="8" y1="22" x2="16" y2="22"/><line x1="12" y1="18" x2="12" y2="22"/></svg></div>
+      <div class="orbit-icon orbit-icon-2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7z"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><path d="M12 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg></div>
+      <div class="orbit-icon orbit-icon-3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="8.5" x2="22" y2="15.5"/><line x1="22" y1="8.5" x2="2" y2="15.5"/></svg></div>
+      <div class="orbit-icon orbit-icon-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+      <div class="orbit-icon orbit-icon-5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
+      <div class="orbit-icon orbit-icon-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+      <div class="orbit-icon orbit-icon-7"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+      <div class="orbit-icon orbit-icon-8"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v2H9zM12 3v6"/><circle cx="12" cy="14" r="5"/><path d="M12 19v3"/></svg></div>
+    </div>
     <div class="container">
       <div class="hero-content fade-in">
+        <h1 class="sr-only">DevForge - Moderne nettsider, systemer og digitale lanseringer</h1>
         <div class="hero-badge">
           <span class="hero-badge-dot"></span>
           Vi tar nye prosjekter
         </div>
-        <h1>Vi bygger <span class="gradient-text">moderne nettsider</span> som vokser med deg</h1>
-        <p>
-          Fra enkle landingssider til avanserte webapplikasjoner — vi hjelper deg å skape
-          en digital tilstedeværelse som skiller seg ut og leverer resultater.
+        <div class="hero-logo-area">
+          <picture>
+            <source srcset="images/Logoer/devforge-concept-3-final.webp" type="image/webp">
+            <img src="images/Logoer/devforge-concept-3-final.png" alt="DevForge" class="hero-logo-img" width="1536" height="1024">
+          </picture>
+        </div>
+        <p class="hero-tagline">
+          Moderne nettsider, systemer og digitale lanseringer
         </p>
         <div class="hero-actions">
           <a href="contact-no.html" class="btn btn-primary">
-            ✉️ Ta kontakt
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+            Book en gratis nettside-gjennomgang
           </a>
           <a href="services-no.html" class="btn btn-secondary">
-            Se våre tjenester →
+            Se våre tjenester
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
           </a>
         </div>
-        <div class="hero-stats">
-          <div>
-            <div class="stat-number" data-target="1" data-suffix="">0</div>
-            <div class="stat-label">Ditt neste prosjekt</div>
+        <div class="hero-proof">
+          <div class="proof-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Rask levering
           </div>
-          <div>
-            <div class="stat-number" data-target="100" data-suffix="%">0%</div>
-            <div class="stat-label">Dedikert til din suksess</div>
+          <div class="proof-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Ren kode
           </div>
-          <div>
-            <div class="stat-number" data-target="1" data-suffix="">0</div>
-            <div class="stat-label">Team klart til å hjelpe deg</div>
+          <div class="proof-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Klare for lansering
           </div>
         </div>
-      </div>
     </div>
   </section>
 
+  <!-- ===== TJENESTER ===== -->
   <section class="section section-dark" id="tjenester">
     <div class="container">
       <div class="section-header fade-in">
@@ -123,7 +153,7 @@
         <h2 class="section-title">Hva vi kan gjøre for deg</h2>
         <p class="section-subtitle">Skreddersydde nettløsninger for din bedrift — fra idé til ferdig produkt.</p>
       </div>
-      <div class="services-grid">
+      <div class="services-grid stagger-grid">
         <div class="service-card fade-in">
           <img src="images/Product%20Images/websites.png" alt="Websites & Landing Pages by DevForge" class="service-card-img" loading="lazy" decoding="async" width="600" height="400">
           <div class="service-icon">🖥️</div>
@@ -164,14 +194,15 @@
     </div>
   </section>
 
-  <section class="section" id="hvorfor-oss">
+  <!-- ===== HVORFOR VELGE OSS ===== -->
+  <section class="section section-reveal" id="hvorfor-oss">
     <div class="container">
       <div class="section-header fade-in">
         <span class="section-tag">Hvorfor velge oss</span>
         <h2 class="section-title">Hva skiller oss fra andre</h2>
         <p class="section-subtitle">Vi er et nytt team med store ambisjoner — her er hva du kan forvente.</p>
       </div>
-      <div class="services-grid">
+      <div class="services-grid stagger-grid">
         <div class="service-card fade-in">
           <img src="images/Product%20Images/value-modern-tech-stack.png" alt="Laptop with code editor for modern development stack" class="service-card-img" loading="lazy" decoding="async" width="600" height="400">
           <div class="service-icon">⚙️</div>
@@ -200,6 +231,7 @@
     </div>
   </section>
 
+  <!-- ===== SLIK JOBBER VI ===== -->
   <section class="section section-dark">
     <div class="container">
       <div class="section-header fade-in">
@@ -232,6 +264,67 @@
     </div>
   </section>
 
+  <!-- ===== SIDE PROJECT: PET PORTRAITS ===== -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Sideprosjekt</span>
+        <h2 class="section-title">DevForge <span class="gradient-text">Pet Portraits</span></h2>
+        <p class="section-subtitle">AI-genererte kjæledyrportretter i klassisk kunststil — et morsomt sideprosjekt fra DevForge-teamet.</p>
+      </div>
+      <div style="text-align:center;">
+        <a href="/pet-portraits/" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="10"/><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg>
+          Utforsk Pet Portraits
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SISTE FRA BLOGGEN ===== -->
+  <section class="section section-reveal">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Innblikk</span>
+        <h2 class="section-title">Siste fra <span class="gradient-text">bloggen</span></h2>
+        <p class="section-subtitle">Praktiske råd om webutvikling og digital strategi for norske bedrifter.</p>
+      </div>
+      <div class="blog-grid">
+        <div class="blog-card fade-in">
+          <div class="blog-card-tags">
+            <span class="blog-card-tag">Prisguide</span>
+          </div>
+          <div class="blog-card-date">13. juni 2026</div>
+          <h3>Hvor mye koster en nettside for småbedrifter i Norge? [2026-guide]</h3>
+          <p>En transparent oversikt over hva norske bedrifter faktisk betaler for profesjonelle nettsider — fra 15.000 kr til 50.000 kr+.</p>
+          <a href="blog/nettside-kostnad-norge-2026.html" class="blog-card-link">Les mer →</a>
+        </div>
+        <div class="blog-card fade-in">
+          <div class="blog-card-tags">
+            <span class="blog-card-tag">Tips</span>
+          </div>
+          <div class="blog-card-date">13. juni 2026</div>
+          <h3>5 tegn på at bedriften din trenger en ny nettside</h3>
+          <p>Er nettsiden din i ferd med å koste deg kunder? Her er tegnene på at det er på tide med en redesign.</p>
+          <a href="blog/signs-need-new-website.html" class="blog-card-link">Les mer →</a>
+        </div>
+        <div class="blog-card fade-in">
+          <div class="blog-card-tags">
+            <span class="blog-card-tag">Strategi</span>
+          </div>
+          <div class="blog-card-date">13. juni 2026</div>
+          <h3>Nettside vs. sosiale medier: Derfor trenger norske bedrifter begge deler</h3>
+          <p>Bør du satse på nettside eller bare Facebook og Instagram? Svaret kan overraske deg.</p>
+          <a href="blog/website-vs-social-media.html" class="blog-card-link">Les mer →</a>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px;">
+        <a href="blog.html" class="btn btn-secondary">Se alle innlegg →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
   <section class="section cta-section">
     <div class="container fade-in">
       <h2>Klar for å ta nettsiden din <span class="gradient-text">til neste nivå</span>?</h2>
@@ -240,6 +333,7 @@
     </div>
   </section>
 
+  <!-- ===== FOOTER ===== -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
@@ -247,15 +341,15 @@
           <div class="footer-logo">
             <img src="images/Logoer/devforge-concept-3-final.webp" alt="DevForge" class="footer-logo-img" width="80" height="53">
           </div>
-          <p>Moderne webutvikling for bedrifter som vil skille seg ut.</p>
+          <p>Moderne webutvikling for bedrifter som vil skille seg ut. Vi bygger nettsider som leverer resultater.</p>
         </div>
         <div>
           <h4>Tjenester</h4>
           <div class="footer-links">
-            <a href="services-no.html">Nettsider</a>
-            <a href="services-no.html">Nettbutikk</a>
-            <a href="services-no.html">Webapplikasjoner</a>
-            <a href="services-no.html">SEO & Ytelse</a>
+            <a href="services-no.html" aria-label="Se våre nettsidetjenester">Nettsider</a>
+            <a href="services-no.html" aria-label="Se våre nettbutikktjenester">Nettbutikk</a>
+            <a href="services-no.html" aria-label="Se våre webapplikasjonstjenester">Webapplikasjoner</a>
+            <a href="services-no.html" aria-label="Se våre SEO-tjenester">SEO & Ytelse</a>
           </div>
         </div>
         <div>
@@ -286,11 +380,13 @@
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 DevForge. Alle rettigheter reservert. Basert i Norge.</p>
+        <div class="footer-social">
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- ===== TELEGRAM FLOATING BUTTON ===== -->
+  <!-- ===== TELEGRAM FLYTENDE KNAPP ===== -->
   <a href="https://t.me/hajo101378" target="_blank" rel="noopener noreferrer"
      class="telegram-btn" aria-label="Kontakt oss på Telegram">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
