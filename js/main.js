@@ -233,27 +233,19 @@
 
   var banner = document.createElement('div');
   banner.id = 'cookie-banner';
-  banner.style.cssText =
-    'position:fixed;bottom:0;left:0;right:0;z-index:9999;' +
-    'background:var(--bg-section,#1e293b);border-top:1px solid var(--border-color,#334155);' +
-    'padding:16px 24px;display:flex;align-items:center;justify-content:space-between;' +
-    'flex-wrap:wrap;gap:12px;font-size:0.9rem;color:var(--text-light,#f1f5f9);box-sizing:border-box;overflow-x:hidden;';
 
   var text = document.createElement('span');
-  text.style.cssText = 'flex:1;min-width:200px;line-height:1.6;';
   var isNO = window.location.pathname.indexOf('-no.') !== -1 || window.location.pathname === '/index-no.html';
   text.textContent = isNO
     ? 'Denne nettsiden bruker skrifttyper som lastes lokalt. Ingen tredjeparts informasjonskapsler benyttes.'
     : 'This site uses locally hosted fonts. No third-party cookies are used.';
 
   var btnDiv = document.createElement('div');
-  btnDiv.style.cssText = 'display:flex;gap:8px;flex-shrink:0;';
+  btnDiv.className = 'cookie-btn-group';
 
   var acceptBtn = document.createElement('button');
-  acceptBtn.textContent = isNO ? 'OK' : 'OK';
-  acceptBtn.style.cssText =
-    'padding:8px 20px;background:var(--gradient-1,#6366f1);color:white;border:none;' +
-    'border-radius:var(--radius-sm,8px);font-weight:600;cursor:pointer;font-family:inherit;font-size:0.9rem;';
+  acceptBtn.textContent = 'OK';
+  acceptBtn.className = 'cookie-btn';
   acceptBtn.addEventListener('click', function() {
     localStorage.setItem('cookieConsent', 'accepted');
     banner.remove();

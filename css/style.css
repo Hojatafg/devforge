@@ -254,6 +254,12 @@ ul {
   letter-spacing: 0.5px;
 }
 
+.nav-lang::before {
+  content: "🌐";
+  font-size: 0.75rem;
+  margin-right: 2px;
+}
+
 .nav-lang:hover {
   background: rgba(99, 102, 241, 0.25);
   border-color: var(--primary);
@@ -2100,6 +2106,77 @@ ul {
   }
 }
 
+/* ===== COOKIE BANNER ===== */
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: var(--bg-section, #1e293b);
+  border-top: 1px solid var(--border-color, #334155);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--text-light, #f1f5f9);
+  box-sizing: border-box;
+  overflow-x: hidden;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+#cookie-banner span {
+  flex: 1;
+  min-width: 200px;
+  line-height: 1.6;
+}
+
+.cookie-btn-group {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.cookie-btn {
+  padding: 8px 20px;
+  background: var(--gradient-1, #6366f1);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm, 8px);
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.cookie-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+@media (max-width: 640px) {
+  #cookie-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 14px 16px;
+  }
+  #cookie-banner span {
+    min-width: 0;
+  }
+  .cookie-btn-group {
+    width: 100%;
+  }
+  .cookie-btn {
+    flex: 1;
+  }
+}
+
 /* ==========================================
  * MOTION ANIMATIONS — Scroll-reveal,
  * staggered cards, counter improvements
@@ -2174,6 +2251,12 @@ ul {
   transition: all 0.2s ease;
   font-family: inherit;
   line-height: 1;
+}
+
+.lang-btn .lang-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .lang-btn:hover,
