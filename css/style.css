@@ -409,8 +409,6 @@ ul {
   position: relative;
   overflow: hidden;
   padding-top: var(--nav-height);
-  background-image: radial-gradient(rgba(99, 102, 241, 0.08) 1px, transparent 1px);
-  background-size: 40px 40px;
 }
 
 /* Hero background video (Codex-generated) */
@@ -422,7 +420,7 @@ ul {
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  opacity: 0.6;
+  opacity: 0.8;
   pointer-events: none;
 }
 
@@ -431,16 +429,20 @@ ul {
   z-index: 1;
 }
 
+/* Make logo background transparent so video shows through */
+.hero-logo-img {
+  mix-blend-mode: screen;
+  filter: contrast(1.1);
+}
+
+.hero-logo-area {
+  position: relative;
+  z-index: 2;
+}
+
+/* Remove hero glow overlay */
 .hero::before {
-  content: '';
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
-  top: -200px;
-  right: -200px;
-  pointer-events: none;
+  display: none;
 }
 
 .hero::after {
