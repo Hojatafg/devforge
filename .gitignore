@@ -6,3 +6,4 @@ make-pptx.js
 
 # Local Netlify folder
 .netlify
+prototype/dist

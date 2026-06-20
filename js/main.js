@@ -503,3 +503,79 @@
   scrollParallax();
 
 })();
+
+/* ===== STICKY-STACKING PROJECT CARDS ===== */
+(function() {
+  'use strict';
+  var cards = document.querySelectorAll('.project-card');
+  if (!cards.length) return;
+
+  var totalCards = cards.length;
+
+  function updateScales() {
+    var windowCenter = window.scrollY + window.innerHeight * 0.3;
+    cards.forEach(function(card) {
+      var index = parseInt(card.getAttribute('data-index'));
+      var rect = card.getBoundingClientRect();
+      var cardTop = rect.top + window.scrollY;
+      var progress = (window.scrollY + window.innerHeight - cardTop) / (window.innerHeight * 1.5);
+      progress = Math.max(0, Math.min(1, progress));
+      var targetScale = 1 - (totalCards - 1 - index) * 0.03;
+      var scale = 1 - (1 - targetScale) * progress;
+      card.style.transform = 'scale(' + scale + ')';
+    });
+  }
+
+  var tickingS = false;
+  window.addEventListener('scroll', function() {
+    if (!tickingS) {
+      requestAnimationFrame(function() {
+        updateScales();
+        tickingS = false;
+      });
+      tickingS = true;
+    }
+  }, { passive: true });
+
+  updateScales();
+})();
+
+/* ===== MAGNET BUTTON EFFECT ===== */
+(function() {
+  'use strict';
+  var magnets = document.querySelectorAll('[data-magnet]');
+  if (!magnets.length) return;
+
+  magnets.forEach(function(el) {
+    var padding = parseInt(el.getAttribute('data-magnet-padding')) || 80;
+    var strength = parseInt(el.getAttribute('data-magnet-strength')) || 3;
+
+    function onMove(e) {
+      var rect = el.getBoundingClientRect();
+      var centerX = rect.left + rect.width / 2;
+      var centerY = rect.top + rect.height / 2;
+      var distX = e.clientX - centerX;
+      var distY = e.clientY - centerY;
+      var dist = Math.sqrt(distX * distX + distY * distY);
+      var maxDist = Math.max(rect.width, rect.height) / 2 + padding;
+
+      if (dist < maxDist) {
+        el.classList.add('magnet-active');
+        var x = distX / strength;
+        var y = distY / strength;
+        el.style.transform = 'translate3d(' + x + 'px, ' + y + 'px, 0)';
+      } else {
+        el.classList.remove('magnet-active');
+        el.style.transform = '';
+      }
+    }
+
+    function onLeave() {
+      el.classList.remove('magnet-active');
+      el.style.transform = '';
+    }
+
+    window.addEventListener('mousemove', onMove);
+    el.addEventListener('mouseleave', onLeave);
+  });
+})();

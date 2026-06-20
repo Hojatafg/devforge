@@ -2753,6 +2753,8 @@ ul {
   }
 }
 
+/* ===== PROJECTS STICKY STACK ===== */
+
 /* ===== SERVICE CARD IMAGES ===== */
 .service-card-img {
   width: 100%;
@@ -2801,3 +2803,5 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== PROJECTS STICKY STACK ===== */
