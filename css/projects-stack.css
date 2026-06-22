@@ -90,7 +90,7 @@
 .project-img-col img {
   width: 100%;
   border-radius: 14px;
-  object-fit: cover;
+  object-fit: contain;
   border: 1px solid rgba(99, 102, 241, 0.15);
   background: #0f172a;
 }
