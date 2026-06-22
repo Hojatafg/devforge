@@ -42,6 +42,7 @@
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "sales",
+      "email": "post@devforgelab.eu",
       "availableLanguage": ["English", "Norwegian"],
       "url": BASE_URL + "/contact.html"
     },
