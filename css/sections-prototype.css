@@ -1,164 +1,148 @@
-1|/* ==========================================
-2| * DevForge — Lower Sections Prototype Style
-3| * Hero untouched. Sections below hero only.
-4| * Alternating dark/white + larger typography.
-5| * ========================================== */
-6|
-7|/* ---- Services: white bg, rounded top, larger titles ---- */
-8|#services, #tjenester {
-9|  background: #ffffff !important;
-10|  border-radius: 40px 40px 0 0 !important;
-11|  position: relative !important;
-12|  z-index: 2 !important;
-13|  padding-top: 80px !important;
-14|  padding-bottom: 100px !important;
-15|}
-16|#services .section-tag, #tjenester .section-tag { color: rgba(12,12,12,0.5) !important; }
-17|#services .section-title, #tjenester .section-title {
-18|  font-size: clamp(2.5rem, 6vw, 5rem) !important;
-19|  font-weight: 900 !important;
-20|  text-transform: uppercase !important;
-21|  color: #0C0C0C !important;
-22|}
-23|#services .section-subtitle, #tjenester .section-subtitle { color: rgba(12,12,12,0.5) !important; }
-24|#services .service-card, #tjenester .service-card {
-25|  background: #ffffff !important;
-26|  border: 1px solid rgba(12,12,12,0.12) !important;
-27|  box-shadow: 0 1px 3px rgba(0,0,0,0.06) !important;
-28|}
-29|#services .service-card, #tjenester .service-card h3 { color: #0C0C0C !important; }
-30|#services .service-card, #tjenester .service-card p { color: rgba(12,12,12,0.6) !important; }
-31|/* All links, buttons, icons in services — dark on white */
-32|#services a, #tjenester a { color: #6366f1 !important; }
-33|#services .btn, #tjenester .btn { border-color: rgba(12,12,12,0.2) !important; color: #0C0C0C !important; }
-34|#services .btn, #tjenester .btn:hover { background: #0C0C0C !important; color: #fff !important; }
-35|
-36|/* ---- Projects: dark bg, rounded top, larger ---- */
-37|#projects {
-38|  background: #0C0C0C !important;
-39|  border-radius: 40px 40px 0 0 !important;
-40|  
-41|  position: relative !important;
-42|  z-index: 3 !important;
-43|  padding-top: 80px !important;
-44|}
-45|#projects .section-title {
-46|  font-size: clamp(2.5rem, 6vw, 5rem) !important;
-47|  font-weight: 900 !important;
-48|  text-transform: uppercase !important;
-49|}
-50|#projects .section-subtitle { color: rgba(215,226,234,0.5) !important; }
-51|
-52|/* ---- Why Us: white bg (alternates) ---- */
-53|#why-us, #hvorfor-oss {
-54|  background: #ffffff !important;
-55|  border-radius: 40px 40px 0 0 !important;
-56|  
-57|  position: relative !important;
-58|  z-index: 4 !important;
-59|  padding-top: 80px !important;
-60|  padding-bottom: 100px !important;
-61|}
-62|#why-us .section-tag, #hvorfor-oss .section-tag { color: rgba(12,12,12,0.5) !important; }
-63|#why-us .section-title, #hvorfor-oss .section-title {
-64|  font-size: clamp(2rem, 5vw, 4rem) !important;
-65|  font-weight: 900 !important;
-66|  text-transform: uppercase !important;
-67|  color: #0C0C0C !important;
-68|}
-69|#why-us .section-subtitle, #hvorfor-oss .section-subtitle { color: rgba(12,12,12,0.5) !important; }
-70|#why-us .service-card, #hvorfor-oss .service-card {
-71|  background: #ffffff !important;
-72|  border: 1px solid rgba(12,12,12,0.12) !important;
-73|  box-shadow: 0 1px 3px rgba(0,0,0,0.06) !important;
-74|}
-75|#why-us .service-card, #hvorfor-oss .service-card h3 { color: #0C0C0C !important; }
-76|#why-us .service-card, #hvorfor-oss .service-card p { color: rgba(12,12,12,0.6) !important; }
-77|/* All links and buttons in why-us — dark on white */
-78|#why-us a, #hvorfor-oss a { color: #6366f1 !important; }
-79|#why-us .btn, #hvorfor-oss .btn { border-color: rgba(12,12,12,0.2) !important; color: #0C0C0C !important; }
-80|#why-us .btn, #hvorfor-oss .btn:hover { background: #0C0C0C !important; color: #fff !important; }
-81|
-82|/* ---- Process: dark bg ---- */
-83|#process {
-84|  background: #0C0C0C !important;
-85|  border-radius: 40px 40px 0 0 !important;
-86|  
-87|  position: relative !important;
-88|  z-index: 5 !important;
-89|  padding-top: 80px !important;
-90|  padding-bottom: 100px !important;
-91|}
-92|#process .section-tag { color: rgba(215,226,234,0.5) !important; }
-93|#process .section-title {
-94|  font-size: clamp(2rem, 5vw, 4rem) !important;
-95|  font-weight: 900 !important;
-96|  text-transform: uppercase !important;
-97|  color: #D7E2EA !important;
-98|}
-99|#process .section-subtitle { color: rgba(215,226,234,0.5) !important; }
-100|/* All text in process section — light on dark */
-101|#process h3, #process .step-title, #process .step-card h3 { color: #D7E2EA !important; }
-102|#process p, #process .step-desc, #process .step-card p { color: rgba(215,226,234,0.7) !important; }
-103|#process a { color: #818cf8 !important; }
-104|#process .step-number { color: #D7E2EA !important; }
-105|
-106|/* ---- Pet Portraits: dark bg ---- */
-107|#pet-portraits {
-108|  background: #0C0C0C !important;
-109|  border-radius: 40px 40px 0 0 !important;
-110|  
-111|  position: relative !important;
-112|  z-index: 6 !important;
-113|  padding-top: 80px !important;
-114|}
-115|#pet-portraits .section-tag { color: rgba(215,226,234,0.5) !important; }
-116|#pet-portraits .section-title, #pet-portraits .section-subtitle { color: #D7E2EA !important; }
-117|#pet-portraits a, #pet-portraits .btn { color: #D7E2EA !important; }
-118|
-119|/* ---- Blog: white bg, but blog cards dark ---- */
-120|#blog {
-121|  background: #ffffff !important;
-122|  border-radius: 40px 40px 0 0 !important;
-123|  position: relative !important;
-124|  z-index: 7 !important;
-125|  padding-top: 80px !important;
-126|  padding-bottom: 100px !important;
-127|}
-128|#blog .section-tag { color: rgba(12,12,12,0.5) !important; }
-129|#blog .section-title { color: #0C0C0C !important; }
-130|#blog .section-subtitle { color: rgba(12,12,12,0.5) !important; }
-131|/* Blog cards — dark bg with light text */
-132|#blog .blog-card {
-133|  background: #0f172a !important;
-134|  border-radius: 16px !important;
-135|  padding: 24px !important;
-136|  border: 1px solid rgba(99,102,241,0.15) !important;
-137|}
-138|#blog .blog-card h3 { color: #ffffff !important; }
-139|#blog .blog-card p { color: rgba(255,255,255,0.7) !important; }
-140|#blog .blog-card-date { color: rgba(255,255,255,0.5) !important; }
-141|#blog .blog-card-link { color: #818cf8 !important; }
-142|#blog .blog-card-tag { background: rgba(99,102,241,0.2) !important; color: #a5b4fc !important; }
-143|/* View all posts button — dark on white */
-144|#blog .btn-secondary { background: transparent !important; color: #0C0C0C !important; border: 1px solid rgba(12,12,12,0.25) !important; }
-145|#blog .btn-secondary:hover { background: #0C0C0C !important; color: #fff !important; }
-146|
-147|/* ---- CTA: dark bg ---- */
-148|#cta {
-149|  background: #0C0C0C !important;
-150|  border-radius: 40px 40px 0 0 !important;
-151|  
-152|  position: relative !important;
-153|  z-index: 8 !important;
-154|  padding-top: 80px !important;
-155|  padding-bottom: 100px !important;
-156|}
-157|#cta h2 { color: #D7E2EA !important; }
-158|#cta p { color: rgba(215,226,234,0.6) !important; }
-159|
-160|/* ---- Keep hero completely untouched ---- */
-161|.hero, .hero *, .hero::before, .hero::after {
-162|  /* no overrides — hero stays exactly as original */;
-163|}
-164|
+/* ==========================================
+ * DevForge — Lower Sections Prototype Style
+ * Hero untouched. Sections below hero only.
+ * Alternating dark/white + larger typography.
+ * ========================================== */
+
+/* ---- Services: white bg, rounded top, larger titles ---- */
+#services, #tjenester {
+  background: #ffffff !important;
+  border-radius: 40px 40px 0 0 !important;
+  position: relative !important;
+  z-index: 2 !important;
+  padding-top: 80px !important;
+  padding-bottom: 100px !important;
+}
+#services .section-tag, #tjenester .section-tag { color: rgba(12,12,12,0.5) !important; }
+#services .section-title, #tjenester .section-title {
+  font-size: clamp(2.5rem, 6vw, 5rem) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  color: #0C0C0C !important;
+}
+#services .section-subtitle, #tjenester .section-subtitle { color: rgba(12,12,12,0.5) !important; }
+#services .service-card, #tjenester .service-card {
+  background: #ffffff !important;
+  border: 1px solid rgba(12,12,12,0.12) !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06) !important;
+}
+#services .service-card h3, #tjenester .service-card h3 { color: #0C0C0C !important; }
+#services .service-card p, #tjenester .service-card p { color: rgba(12,12,12,0.6) !important; }
+#services a, #tjenester a { color: #6366f1 !important; }
+#services .btn, #tjenester .btn { border-color: rgba(12,12,12,0.2) !important; color: #0C0C0C !important; }
+#services .btn:hover, #tjenester .btn:hover { background: #0C0C0C !important; color: #fff !important; }
+
+/* ---- Projects: dark bg, rounded top, larger ---- */
+#projects {
+  background: #0C0C0C !important;
+  border-radius: 40px 40px 0 0 !important;
+  position: relative !important;
+  z-index: 3 !important;
+  padding-top: 80px !important;
+}
+#projects .section-title {
+  font-size: clamp(2.5rem, 6vw, 5rem) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+}
+#projects .section-subtitle { color: rgba(215,226,234,0.5) !important; }
+
+/* ---- Why Us: white bg (alternates) ---- */
+#why-us, #hvorfor-oss {
+  background: #ffffff !important;
+  border-radius: 40px 40px 0 0 !important;
+  position: relative !important;
+  z-index: 4 !important;
+  padding-top: 80px !important;
+  padding-bottom: 100px !important;
+}
+#why-us .section-tag, #hvorfor-oss .section-tag { color: rgba(12,12,12,0.5) !important; }
+#why-us .section-title, #hvorfor-oss .section-title {
+  font-size: clamp(2rem, 5vw, 4rem) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  color: #0C0C0C !important;
+}
+#why-us .section-subtitle, #hvorfor-oss .section-subtitle { color: rgba(12,12,12,0.5) !important; }
+#why-us .service-card, #hvorfor-oss .service-card {
+  background: #ffffff !important;
+  border: 1px solid rgba(12,12,12,0.12) !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06) !important;
+}
+#why-us .service-card h3, #hvorfor-oss .service-card h3 { color: #0C0C0C !important; }
+#why-us .service-card p, #hvorfor-oss .service-card p { color: rgba(12,12,12,0.6) !important; }
+#why-us a, #hvorfor-oss a { color: #6366f1 !important; }
+#why-us .btn, #hvorfor-oss .btn { border-color: rgba(12,12,12,0.2) !important; color: #0C0C0C !important; }
+#why-us .btn:hover, #hvorfor-oss .btn:hover { background: #0C0C0C !important; color: #fff !important; }
+
+/* ---- Process: dark bg ---- */
+#process {
+  background: #0C0C0C !important;
+  border-radius: 40px 40px 0 0 !important;
+  position: relative !important;
+  z-index: 5 !important;
+  padding-top: 80px !important;
+  padding-bottom: 100px !important;
+}
+#process .section-tag { color: rgba(215,226,234,0.5) !important; }
+#process .section-title {
+  font-size: clamp(2rem, 5vw, 4rem) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  color: #D7E2EA !important;
+}
+#process .section-subtitle { color: rgba(215,226,234,0.5) !important; }
+#process h3, #process .step-title, #process .step-card h3 { color: #D7E2EA !important; }
+#process p, #process .step-desc, #process .step-card p { color: rgba(215,226,234,0.7) !important; }
+#process a { color: #818cf8 !important; }
+#process .step-number { color: #D7E2EA !important; }
+
+/* ---- Pet Portraits: dark bg ---- */
+#pet-portraits {
+  background: #0C0C0C !important;
+  border-radius: 40px 40px 0 0 !important;
+  position: relative !important;
+  z-index: 6 !important;
+  padding-top: 80px !important;
+}
+#pet-portraits .section-tag { color: rgba(215,226,234,0.5) !important; }
+#pet-portraits .section-title, #pet-portraits .section-subtitle { color: #D7E2EA !important; }
+#pet-portraits a, #pet-portraits .btn { color: #D7E2EA !important; }
+
+/* ---- Blog: white bg, but blog cards dark ---- */
+#blog {
+  background: #ffffff !important;
+  border-radius: 40px 40px 0 0 !important;
+  position: relative !important;
+  z-index: 7 !important;
+  padding-top: 80px !important;
+  padding-bottom: 100px !important;
+}
+#blog .section-tag { color: rgba(12,12,12,0.5) !important; }
+#blog .section-title { color: #0C0C0C !important; }
+#blog .section-subtitle { color: rgba(12,12,12,0.5) !important; }
+#blog .blog-card {
+  background: #0f172a !important;
+  border-radius: 16px !important;
+  padding: 24px !important;
+  border: 1px solid rgba(99,102,241,0.15) !important;
+}
+#blog .blog-card h3 { color: #ffffff !important; }
+#blog .blog-card p { color: rgba(255,255,255,0.7) !important; }
+#blog .blog-card-date { color: rgba(255,255,255,0.5) !important; }
+#blog .blog-card-link { color: #818cf8 !important; }
+#blog .blog-card-tag { background: rgba(99,102,241,0.2) !important; color: #a5b4fc !important; }
+#blog .btn-secondary { background: transparent !important; color: #0C0C0C !important; border: 1px solid rgba(12,12,12,0.25) !important; }
+#blog .btn-secondary:hover { background: #0C0C0C !important; color: #fff !important; }
+
+/* ---- CTA: dark bg ---- */
+#cta {
+  background: #0C0C0C !important;
+  border-radius: 40px 40px 0 0 !important;
+  position: relative !important;
+  z-index: 8 !important;
+  padding-top: 80px !important;
+  padding-bottom: 100px !important;
+}
+#cta h2 { color: #D7E2EA !important; }
+#cta p { color: rgba(215,226,234,0.6) !important; }
